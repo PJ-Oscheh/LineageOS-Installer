@@ -3,6 +3,8 @@ A (currently) unofficial installer for LineageOS.
 
 The Installation Script (as explained in the FAQ) can be found at: https://gist.github.com/PJBeans/be9a2c2635660e51cb0a135a33ab1e22
 
+A prebuilt version (ready to install, the "normal user" version) can be found at https://drive.google.com/file/d/0B70zQND1cM1WQVFjYi0yZy1BVnc/view?usp=sharing, although I would not recommend using it this early in this program's life.
+
 This is the source for the UNOFFICIAL Lineage OS Installer for Windows. At the time of creating this program, Lineage OS is not prebuilt and ready for download, so when I tested it, I simply subsituted Lineage OS for CyanogenMod. It was tested on my Nexus 7 2013 WiFi (flo), and worked just fine. I do not know if it will work for non-nexus devices, but I am certain it will not work with Samsung devices, as the installation script does not utilize Download Mode. If enough people like the idea of this installer, I (or perhaps someone in the community) will give support to Samsung devices. If people begin to contribute, we can change the author name in the script and graphical program (this) from "PJBeans" to "LineageOS Community"
 
 PJBeans and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development, and has only been tested on a Nexus 7 2013 WiFi (flo).
