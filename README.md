@@ -34,7 +34,7 @@ Well, you probably don't. This installer was made for folks who would like to in
 
 [-] What does the Installation Script do?
 
-The Installation script, normally located at `C:\Tools\LineageOSInstaller\scripts\`, is what acually installes LineageOS onto the device. It gives the user instructions of what needs to be done, and automatically unlocks the bootloader, flashes recovery, and pushes LineageOS.zip to the user (not all at the same time, of course). There are other scripts, however, I did not feel the need to uplaod them; setup.bat simply sets up the C:\Tools\ directory for the program, adb_check is simply `adb_devices`, and starup.bat simply creates the folder LinOS-Files. I am willing to upload any of these files upon request.
+The Installation script, normally located at `C:\Tools\LineageOSInstaller\scripts\`, is what acually installes LineageOS onto the device. It gives the user instructions of what needs to be done, and automatically unlocks the bootloader, flashes recovery, and pushes LineageOS.zip to the user (not all at the same time, of course). There are other scripts, however, I did not feel the need to upload them; setup.bat simply sets up the C:\Tools\ directory for the program, adb_check is simply `adb_devices`, and starup.bat simply creates the folder LinOS-Files. I am willing to upload any of these files upon request.
 
 # A few things to mention:
 
