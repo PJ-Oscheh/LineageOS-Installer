@@ -26,10 +26,10 @@ Partial Class Form13
         Me.Label1 = New System.Windows.Forms.Label()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,6 +62,15 @@ Partial Class Form13
         Me.Panel1.Size = New System.Drawing.Size(612, 30)
         Me.Panel1.TabIndex = 7
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(28, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(184, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "I already downloaded TWRP"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(523, 3)
@@ -92,15 +101,6 @@ Partial Class Form13
         Me.Label3.Size = New System.Drawing.Size(288, 13)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Save as C:\Tools\LineageOSInstaller\LinOS-Files\recovery"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(28, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(184, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "I already downloaded TWRP"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form13
         '

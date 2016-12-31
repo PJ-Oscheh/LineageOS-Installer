@@ -27,9 +27,9 @@ Partial Class Form3
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -73,6 +73,15 @@ Partial Class Form3
         Me.Panel1.Size = New System.Drawing.Size(612, 30)
         Me.Panel1.TabIndex = 6
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(16, 4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(210, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "I already downloaded LineageOS"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(523, 3)
@@ -91,15 +100,6 @@ Partial Class Form3
         Me.Label3.Size = New System.Drawing.Size(292, 13)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Save as C:\Tools\LineageOSInstaller\LinOS-Files\lineageos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(16, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "I already downloaded LineageOS"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form3
         '

@@ -33,3 +33,7 @@ C:\Users\phill\Documents\Visual Studio 2015\Projects\LineageOS Installer\Lineage
 C:\Users\phill\Documents\Visual Studio 2015\Projects\LineageOS Installer\LineageOS Installer\bin\Debug\LineageOS Installer.application
 C:\Users\phill\Documents\Visual Studio 2015\Projects\LineageOS Installer\LineageOS Installer\obj\Debug\LineageOS Installer.exe.manifest
 C:\Users\phill\Documents\Visual Studio 2015\Projects\LineageOS Installer\LineageOS Installer\obj\Debug\LineageOS Installer.application
+C:\Users\phill\Desktop\install_src\Lineage-OS-Installer\LineageOS Installer\bin\Debug\LineageOS Installer.exe.config
+C:\Users\phill\Desktop\install_src\Lineage-OS-Installer\LineageOS Installer\obj\Debug\LineageOS Installer.exe
+C:\Users\phill\Desktop\install_src\Lineage-OS-Installer\LineageOS Installer\obj\Debug\LineageOS Installer.xml
+C:\Users\phill\Desktop\install_src\Lineage-OS-Installer\LineageOS Installer\obj\Debug\LineageOS Installer.pdb
