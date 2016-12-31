@@ -1,5 +1,5 @@
 # Lineage-OS-Installer
-A (currently) unofficial installer for LineageOS.
+A (currently) unofficial installer for LineageOS written in Visual Basic.
 
 The Installation Script (as explained in the FAQ) can be found at: https://gist.github.com/PJBeans/be9a2c2635660e51cb0a135a33ab1e22
 
