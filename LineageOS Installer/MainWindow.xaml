@@ -1,0 +1,21 @@
+﻿<Window x:Class="LineageOS_Installer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LineageOS_Installer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700"
+        Loaded="Window_Loaded"
+        
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
+    <Grid>
+        <Button x:Name="nextWelcome" Content="Next" HorizontalAlignment="Left" Margin="584,404,0,0" VerticalAlignment="Top" Width="76" Click="nextWelcome_Click"/>
+        <Label x:Name="lineageWelcome" Content="Welcome to Lineage OS!" HorizontalAlignment="Left" Margin="243,42,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Image x:Name="lineageLogo_png" Margin="261,81,231,188" Source="images/lineageLogo.png" Stretch="Fill" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Window>

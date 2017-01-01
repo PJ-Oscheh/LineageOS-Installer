@@ -1,0 +1,27 @@
+﻿<Window x:Class="LineageOS_Installer.Disclaimer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LineageOS_Installer"
+        mc:Ignorable="d"
+        Title="Disclaimer" Height="350" Width="550"
+        
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
+    <Grid>
+        <materialDesign:Card Padding="32" Margin="16">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" Text="Please read the following disclaimer:"/>
+        </materialDesign:Card>
+        <TextBlock x:Name="disclaimerText" HorizontalAlignment="Left" Margin="34,136,0,0" TextWrapping="Wrap" Text="This installer is under heavy development. Upon clicking &quot;Next&quot; (or not), you agree that PJBeans (developer of this application) and the Lineage OS community are NOT responsible if you damage/brick your device in any way during this process." VerticalAlignment="Top" Height="86" Width="472"/>
+        <Label x:Name="samsungWarning" Content="NOTE: Samsung devices are currently unsupported in this installer." HorizontalAlignment="Left" Margin="57,222,0,0" VerticalAlignment="Top" Foreground="#f44336"/>
+        <CheckBox x:Name="agreeBox" Content="I agree" HorizontalAlignment="Left" Margin="353,276,0,0" VerticalAlignment="Top" Checked="agreeBox_Checked" Unchecked="agreeBox_Unchecked"/>
+        <Button x:Name="nextButton" Content="Next" HorizontalAlignment="Left" Margin="431,270,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+
+
+    </Grid>
+</Window>
