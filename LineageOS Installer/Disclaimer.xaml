@@ -17,10 +17,10 @@
         <materialDesign:Card Padding="32" Margin="16">
             <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" Text="Please read the following disclaimer:"/>
         </materialDesign:Card>
-        <TextBlock x:Name="disclaimerText" HorizontalAlignment="Left" Margin="34,136,0,0" TextWrapping="Wrap" Text="This installer is under heavy development. Upon clicking &quot;Next&quot; (or not), you agree that PJBeans (developer of this application) and the Lineage OS community are NOT responsible if you damage/brick your device in any way during this process." VerticalAlignment="Top" Height="86" Width="472"/>
-        <Label x:Name="samsungWarning" Content="NOTE: Samsung devices are currently unsupported in this installer." HorizontalAlignment="Left" Margin="57,222,0,0" VerticalAlignment="Top" Foreground="#f44336"/>
-        <CheckBox x:Name="agreeBox" Content="I agree" HorizontalAlignment="Left" Margin="353,276,0,0" VerticalAlignment="Top" Checked="agreeBox_Checked" Unchecked="agreeBox_Unchecked"/>
-        <Button x:Name="nextButton" Content="Next" HorizontalAlignment="Left" Margin="431,270,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <TextBlock x:Name="Disclaimer_Card" HorizontalAlignment="Left" Margin="34,136,0,0" TextWrapping="Wrap" Text="This installer is under heavy development. Upon clicking &quot;Next&quot;, you agree that PJBeans (developer of this application) and the Lineage OS community are NOT responsible if you damage/brick your device in any way during this process." VerticalAlignment="Top" Height="86" Width="472"/>
+        <Label x:Name="SamsungWarning_Label" Content="NOTE: Samsung devices are currently unsupported in this installer." HorizontalAlignment="Left" Margin="57,222,0,0" VerticalAlignment="Top" Foreground="#f44336"/>
+        <CheckBox x:Name="Agree_CheckBox" Content="I agree" HorizontalAlignment="Left" Margin="353,276,0,0" VerticalAlignment="Top" Checked="Agree_CheckBox_Checked" Unchecked="Agree_CheckBox_Unchecked"/>
+        <Button x:Name="Next_Button" Content="Next" HorizontalAlignment="Left" Margin="431,270,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
 
 
     </Grid>

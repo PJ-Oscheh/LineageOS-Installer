@@ -24,14 +24,14 @@ namespace LineageOS_Installer
             InitializeComponent();
         }
 
-        private void agreeBox_Checked(object sender, RoutedEventArgs e)
+        private void Agree_CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            nextButton.IsEnabled = true;
+            Next_Button.IsEnabled = true;
         }
 
-        private void agreeBox_Unchecked(object sender, RoutedEventArgs e)
+        private void Agree_CheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
-            nextButton.IsEnabled = false;
+            Next_Button.IsEnabled = false;
         }
     }
 }

@@ -30,7 +30,7 @@ namespace LineageOS_Installer
 
         }
 
-        private void nextWelcome_Click(object sender, RoutedEventArgs e)
+        private void Next_Button_Click(object sender, RoutedEventArgs e)
         {
             Disclaimer disclaimer = new Disclaimer();
             disclaimer.Show();

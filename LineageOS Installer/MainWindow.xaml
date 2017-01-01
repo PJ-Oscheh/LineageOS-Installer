@@ -14,8 +14,8 @@
         TextElement.FontSize="14"
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
     <Grid>
-        <Button x:Name="nextWelcome" Content="Next" HorizontalAlignment="Left" Margin="584,404,0,0" VerticalAlignment="Top" Width="76" Click="nextWelcome_Click"/>
-        <Label x:Name="lineageWelcome" Content="Welcome to Lineage OS!" HorizontalAlignment="Left" Margin="243,42,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <Image x:Name="lineageLogo_png" Margin="261,81,231,188" Source="images/lineageLogo.png" Stretch="Fill" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="Next_Button" Content="Next" HorizontalAlignment="Left" Margin="584,404,0,0" VerticalAlignment="Top" Width="76" Click="Next_Button_Click"/>
+        <Label x:Name="LineageWelcome_Label" Content="Welcome to Lineage OS!" HorizontalAlignment="Left" Margin="243,42,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Image x:Name="LineageLogo_Image" Margin="261,81,231,188" Source="images/lineageLogo.png" Stretch="Fill" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>
