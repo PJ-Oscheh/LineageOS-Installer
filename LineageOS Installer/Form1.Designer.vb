@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,19 +50,19 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.Label2.Location = New System.Drawing.Point(116, 177)
+        Me.Label2.Location = New System.Drawing.Point(55, 183)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(379, 90)
+        Me.Label2.Size = New System.Drawing.Size(490, 72)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Upon clicking ""Next"", you agree that PJBeans (developer" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "of this application) and" &
-    " the Lineage OS Community " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is NOT responsible if you damage (brick) your device" &
-    " in " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "this process." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Upon clicking ""Next"", you agree that the developers of this application" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and the " &
+    "Lineage OS Community is NOT responsible if you damage (brick)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " your device in t" &
+    "his process." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.LinkLabel1.Location = New System.Drawing.Point(211, 231)
+        Me.LinkLabel1.Location = New System.Drawing.Point(246, 220)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(121, 18)
         Me.LinkLabel1.TabIndex = 2
@@ -71,7 +72,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(254, 300)
+        Me.Button1.Location = New System.Drawing.Point(308, 300)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(102, 23)
         Me.Button1.TabIndex = 3
@@ -89,22 +90,20 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(75, 341)
+        Me.Label4.Location = New System.Drawing.Point(229, 341)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(461, 26)
+        Me.Label4.Size = New System.Drawing.Size(153, 13)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Certain steps will have external tools launched. On those steps, click ""Next"" whe" &
-    "n that tool exits." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You will know that the tool is finished, becasue it will say" &
-    " ""Finished!"""
+        Me.Label4.Text = "Support section coming soon :)"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(12, 401)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 13)
+        Me.Label5.Size = New System.Drawing.Size(124, 13)
         Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Version 1.0"
+        Me.Label5.Text = "Version 1.0-development"
         '
         'Label6
         '
@@ -126,12 +125,22 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(176, 300)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(102, 23)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "About"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(610, 429)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -161,4 +170,5 @@ Partial Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button2 As Button
 End Class

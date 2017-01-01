@@ -15,4 +15,8 @@
         Process.Start("C:\Tools\LineageOSInstaller\scripts\startup.bat")
         Form2.Show()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MsgBox("This application is developed by the contributions of PJBeans, Evilarceus")
+    End Sub
 End Class

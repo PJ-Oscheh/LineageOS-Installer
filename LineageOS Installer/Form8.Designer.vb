@@ -66,13 +66,11 @@ Partial Class Form8
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label3.Location = New System.Drawing.Point(22, 227)
+        Me.Label3.Location = New System.Drawing.Point(15, 148)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(474, 80)
+        Me.Label3.Size = New System.Drawing.Size(405, 240)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "A command window will open. Follow the instructions it gives you. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Your device w" &
-    "ill restart a few times. Do not disconnect your device." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Once you finish, you " &
-    "may click ""Exit"""
+        Me.Label3.Text = resources.GetString("Label3.Text")
         '
         'Panel1
         '
