@@ -26,9 +26,10 @@ Partial Class Form8
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,16 +63,6 @@ Partial Class Form8
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "WARNING - THIS WILL CLEAR ALL DATA OFF OF DEVICE. BACK UP FIRST."
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label3.Location = New System.Drawing.Point(15, 148)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(405, 240)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = resources.GetString("Label3.Text")
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Cyan
@@ -90,13 +81,31 @@ Partial Class Form8
         Me.Button2.Text = "Exit"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(26, 151)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(557, 227)
+        Me.RichTextBox1.TabIndex = 10
+        Me.RichTextBox1.Text = ""
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(131, 85)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(322, 13)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "A black box will open. DO NOT CLOSE IT, but you may minimize it."
+        '
         'Form8
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 429)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -113,7 +122,8 @@ Partial Class Form8
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button2 As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label3 As Label
 End Class

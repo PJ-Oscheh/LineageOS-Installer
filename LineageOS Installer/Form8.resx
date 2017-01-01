@@ -117,20 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>A command window will open. Follow any instructions
-it gives you. NEVER disconnect your device until the
-program says so. Some parts of this process will take
-a while - sometimes up to 20 minutes. As long as the
-cursor (flashing dash) is blinking, either after a line
-of text (E.G.: Press any key to continute. . . _) or under
-the line (E.G.:
-Pushing files. . .
-_ ) something is happening, do not panic! Just keep your
-device connected.
-
-Once you finish, you may click "Exit"</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -185,12 +185,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="testform.Designer.vb">
-      <DependentUpon>testform.vb</DependentUpon>
-    </Compile>
-    <Compile Include="testform.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -231,9 +225,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="testform.resx">
-      <DependentUpon>testform.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
