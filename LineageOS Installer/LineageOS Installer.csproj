@@ -63,6 +63,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Detection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Disclaimer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +78,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Detection.xaml.cs">
+      <DependentUpon>Detection.xaml</DependentUpon>
     </Compile>
     <Compile Include="Disclaimer.xaml.cs">
       <DependentUpon>Disclaimer.xaml</DependentUpon>
@@ -121,6 +128,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="androidpurple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\devices.png" />
+    <Resource Include="images\device.png" />
+    <EmbeddedResource Include="adb\adb.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adb\AdbWinApi.dll" />
+    <EmbeddedResource Include="adb\AdbWinUsbApi.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

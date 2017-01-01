@@ -34,6 +34,7 @@ namespace LineageOS_Installer
         {
             Disclaimer disclaimer = new Disclaimer();
             disclaimer.Show();
+            this.Close();
         }
     }
 }

@@ -33,5 +33,13 @@ namespace LineageOS_Installer
         {
             Next_Button.IsEnabled = false;
         }
+
+        private void Next_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Detection detect = new Detection();
+            detect.Show();
+            this.Close();
+
+        }
     }
 }
