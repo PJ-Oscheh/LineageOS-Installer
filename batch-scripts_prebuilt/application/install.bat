@@ -1,7 +1,10 @@
+color 70
 @echo off
 echo.
-echo LineageOS Installation Script version 1.0
-echo Script by PJBeans
+echo ==========================================================================
+echo ==========LineageOS Installation Script version 1.1-development===========
+echo ==========================Script by Community=============================
+echo ==========================================================================
 echo.
 dir C:\Tools\LineageOSInstaller\LinOS-Files\
 echo Ensure you see the following above:
@@ -12,34 +15,40 @@ echo.
 echo If you do not see those files, make sure you saved them to the correct place.
 echo Press any key to start installation.
 pause
+cls
+echo Please wait while your device restarts.
 adb reboot bootloader
 timeout 15
-echo Unlock bootloader? 
+echo Unlock the bootloader? 
 echo THIS WILL CLEAR YOUR DEVICE - PRESS ANY KEY 3 TIMES TO CONTINUE
 pause
 pause
 pause
 fastboot oem unlock
-echo Your device should be unlocked. If it did not reboot, reboot it now.
-echo Setup the device as usual. (To save time, you don't need to connect to WiFi or log in to your Google account) 
+echo Your bootloader should be unlocked. If it did not reboot, reboot it now,by cycling thru the options with your volume keys, and using the Power (or Home button on some devices) to select. Select 'Power Off', then hold the power button to turn your device on.
+echo.
+echo Your device should boot into normal Android (not LineageOS). Setup the device as usual. (To save time, you don't need to connect to WiFi or log in to your Google account) 
 echo When you finish the setup, reenable Developer Options and USB Debugging. Press any key when you're done.
 echo.
 pause
+cls
+echo Please wait while your device restarts.
 adb reboot bootloader
 timeout 45
 echo Preparing to flash TWRP custom recovery...
 fastboot flash recovery C:\Tools\LineageOSInstaller\LinOS-Files\recovery.img
 echo After Recovery has flashed, press any key.
 pause
+cls
 echo Now, we will install LineageOS. This next part will take place on your device.
-echo On your device, use the volume buttons to cycle through the options.
+echo On your device, use the volume buttons to cycle through the options, and use the Power button (or Home button on some devices) to select.
 echo Select 'Restart Bootloader'
-pause
+timeout 5
 echo Select 'Recovery mode'
-pause
+timeout 25
 echo.
 echo Tap 'Wipe' then 'Advance Wipe'
-echo Select all the options (except MicroSD Card if that it is present)
+echo Select all the options (except MicroSD Card if that is present)
 echo Slide to wipe the device.
 echo.
 echo After you wipe the device, tap the Home button.
