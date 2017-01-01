@@ -20,7 +20,9 @@ Lineage OS Installer vx.x-release.zip
 'scripts\' is where all the scripts live.
 
 'scripts\adb_check.bat' runs `adb devices` to ensure device is recognized over USB
+
 'scripts\install.bat' is the script that sets up LineageOS
+
 'scripts\startup.bat' creates 'LinOS-Files' directory
 
 
