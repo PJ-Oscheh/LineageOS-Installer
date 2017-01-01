@@ -27,7 +27,7 @@ The developers of this application and the LineageOS Community is not responsibl
 # Goals
 To make this application as user friendly as possible, we should:
 - Create a help page
-- Find a way to run the batch scripts directly in the program
+- Find a way to run the batch scripts directly in the UI, and/or make it more user-friendly
 - Possibly materialize the UI
 - Make the insallation script more automatized. It currently pauses many times, and requires some user input on their device.
 - ^ (It would be quite hard to remove all user input, but let's try to minimize it as much as we can)
