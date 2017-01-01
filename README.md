@@ -2,6 +2,7 @@
 A (currently) unofficial installer for LineageOS written in Visual Basic.
 
 The Installation Script (as explained in the FAQ) can be found at: https://gist.github.com/PJBeans/be9a2c2635660e51cb0a135a33ab1e22
+or in the `batch-scripts_prebuilt` directory.
 
 A prebuilt version (ready to install, the "normal user" version) can be found at https://drive.google.com/file/d/0B70zQND1cM1WQVFjYi0yZy1BVnc/view?usp=sharing, although I would not recommend using it this early in this program's life.
 
