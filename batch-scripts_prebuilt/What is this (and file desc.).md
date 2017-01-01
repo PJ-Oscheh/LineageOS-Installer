@@ -18,9 +18,12 @@ Lineage OS Installer vx.x-release.zip
 'setup.bat' creates and copies files to the `C:\Tools\LineageOSInstaller` directory
 
 'scripts\' is where all the scripts live.
-	'adb_check.bat' runs `adb devices` to ensure device is recognized over USB
-	'install.bat' is the script that sets up LineageOS
-	'startup.bat' creates 'LinOS-Files' directory
+
+'scripts\adb_check.bat' runs `adb devices` to ensure device is recognized over USB
+
+'scripts\install.bat' is the script that sets up LineageOS
+
+'scripts\startup.bat' creates 'LinOS-Files' directory
 
 
 
