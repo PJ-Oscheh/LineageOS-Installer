@@ -1,6 +1,8 @@
 # Lineage-OS-Installer
 A (currently) unofficial installer for LineageOS written in Visual Basic.
 
+Live Chat: https://telegram.me/joinchat/Dri-vEAnmn5QRFVzUj8dfA
+
 The Installation Script (as explained in the FAQ) can be found at: https://gist.github.com/PJBeans/be9a2c2635660e51cb0a135a33ab1e22
 or in the `batch-scripts_prebuilt` directory.
 
