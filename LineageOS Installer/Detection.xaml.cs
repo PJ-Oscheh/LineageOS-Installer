@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -53,13 +54,21 @@ namespace LineageOS_Installer
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            PullProp();
-            Status_Label.Content = "Device version: " + ReadProp("ro.build.version.release");
+            adb.Start();
+            adb.isAuthorized();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             
+        }
+
+        private void Start_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Start_Button.IsEnabled = false;
+            Status_Label.Content = "Status: Pulling build.prop...";
+            PullProp();
+            Status_Label.Content = "Device version: " + ReadProp("ro.build.version.release");
         }
     }
 }

@@ -15,11 +15,14 @@ namespace LineageOS_Installer
 
         private void ExtractResource(string resource, string path)
         {
-            string[] resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
-            Stream stream = GetType().Assembly.GetManifestResourceStream(resource);
-            byte[] bytes = new byte[(int)stream.Length];
-            stream.Read(bytes, 0, bytes.Length);
-            File.WriteAllBytes(path, bytes);
+            if (!File.Exists(path))
+            {
+                string[] resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
+                Stream stream = GetType().Assembly.GetManifestResourceStream(resource);
+                byte[] bytes = new byte[(int)stream.Length];
+                stream.Read(bytes, 0, bytes.Length);
+                File.WriteAllBytes(path, bytes);
+            }
         }
 
         public void Start()
@@ -30,14 +33,17 @@ namespace LineageOS_Installer
             ExtractResource("LineageOS_Installer.adb.AdbWinUsbApi.dll", currentDir + "\\AdbWinUsbApi.dll");
 
             // Start ADB server
-            System.Diagnostics.Process startAdb = new System.Diagnostics.Process();
-            startAdb.StartInfo.FileName = "adb.exe";
-            startAdb.StartInfo.Arguments = "start-server";
-            startAdb.StartInfo.CreateNoWindow = true;
-            startAdb.StartInfo.UseShellExecute = false;
-            startAdb.StartInfo.RedirectStandardOutput = true;
-            startAdb.Start();
-            startAdb.WaitForExit();
+            if (System.Diagnostics.Process.GetProcessesByName("adb.exe").Length == 0)
+            {
+                System.Diagnostics.Process startAdb = new System.Diagnostics.Process();
+                startAdb.StartInfo.FileName = "adb.exe";
+                startAdb.StartInfo.Arguments = "start-server";
+                startAdb.StartInfo.CreateNoWindow = true;
+                startAdb.StartInfo.UseShellExecute = false;
+                startAdb.StartInfo.RedirectStandardOutput = true;
+                startAdb.Start();
+            }
+            
         }
 
         public void Stop()
@@ -50,7 +56,6 @@ namespace LineageOS_Installer
             stopAdb.StartInfo.UseShellExecute = false;
             stopAdb.StartInfo.RedirectStandardOutput = true;
             stopAdb.Start();
-            stopAdb.WaitForExit();
 
             // Kill process
             foreach (var process in System.Diagnostics.Process.GetProcessesByName("adb.exe"))
@@ -69,6 +74,33 @@ namespace LineageOS_Installer
             //File.Delete(currentDir + "\\AdbWinUsbApi.dll");
         }
 
+        public bool isAuthorized()
+        {
+            System.Diagnostics.Process devicesAdb = new System.Diagnostics.Process();
+            devicesAdb.StartInfo.FileName = "adb.exe";
+            devicesAdb.StartInfo.Arguments = "devices";
+            devicesAdb.StartInfo.CreateNoWindow = true;
+            devicesAdb.StartInfo.UseShellExecute = false;
+            devicesAdb.StartInfo.RedirectStandardOutput = true;
+            devicesAdb.Start();
+            string devicesOutput = devicesAdb.StandardOutput.ReadToEnd().Replace("List of devices attached", null);
+            if (devicesOutput.Contains("unauthorized"))
+            {
+                Console.WriteLine("Device unautorized.");
+                return false;
+            }
+            if (devicesOutput.Contains("device"))
+            {
+                Console.WriteLine("Device authorized.");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("No devices were found. Is USB debugging enabled?");
+                return false;
+            }
+        }
+
         public void Pull(string file)
         {
             System.Diagnostics.Process pullAdb = new System.Diagnostics.Process();
@@ -78,7 +110,6 @@ namespace LineageOS_Installer
             pullAdb.StartInfo.UseShellExecute = false;
             pullAdb.StartInfo.RedirectStandardOutput = true;
             pullAdb.Start();
-            pullAdb.WaitForExit();
             pullOutput = pullAdb.StandardOutput.ReadToEnd().Replace("\r\n", null);
         }
     }
