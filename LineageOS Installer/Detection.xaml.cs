@@ -144,6 +144,13 @@ namespace LineageOS_Installer
                     Dispatcher.Invoke(() => Status_Label.Foreground = Brushes.Red);
                     Dispatcher.Invoke(() => Loading_Bar.Visibility = Visibility.Hidden);
                 }
+                if (result == true && manufactuer == "samsung")
+                {
+                    Dispatcher.Invoke(() => Start_Button.Margin = new Thickness(359, 475, 359, 0));
+                    Dispatcher.Invoke(() => Status_Label.Content = "Your device is compatible, but Samsung devices are currently unsupported \n by this installer. However, you can flash manually to install LineageOS.");
+                    Dispatcher.Invoke(() => Status_Label.Foreground = Brushes.DarkBlue);
+                    Dispatcher.Invoke(() => Loading_Bar.Visibility = Visibility.Hidden);
+                }
             }
             if (auth == "unauthorized")
             {
