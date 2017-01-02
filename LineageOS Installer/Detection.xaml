@@ -18,11 +18,12 @@
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
     <Grid>
         <materialDesign:Card Padding="32" Margin="16">
-            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" Text="Device detection"/>
+            <TextBlock x:Name="Title" Style="{DynamicResource MaterialDesignTitleTextBlock}" Text="Device detection"/>
         </materialDesign:Card>
         <Image x:Name="Devices_Image" Source="images/devices.png" Width="240" Margin="276,196,276,133" Height="240" />
         <Label x:Name="Status_Label" Content="Please plug in your device." HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Button x:Name="Start_Button" Content="Start" HorizontalAlignment="Center" Margin="359,448,359,0" VerticalAlignment="Top" Width="74" Click="Start_Button_Click"/>
+        <ProgressBar x:Name="Loading_Bar" HorizontalAlignment="Center" Height="10" Margin="0,496,0,0" VerticalAlignment="Top" Width="150" IsIndeterminate="True" HorizontalContentAlignment="Center" Visibility="Hidden" />
 
     </Grid>
 </Window>
