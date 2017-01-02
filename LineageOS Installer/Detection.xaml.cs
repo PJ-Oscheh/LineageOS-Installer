@@ -55,7 +55,6 @@ namespace LineageOS_Installer
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             adb.Start();
-            adb.isAuthorized();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -65,10 +64,24 @@ namespace LineageOS_Installer
 
         private void Start_Button_Click(object sender, RoutedEventArgs e)
         {
-            Start_Button.IsEnabled = false;
-            Status_Label.Content = "Status: Pulling build.prop...";
-            PullProp();
-            Status_Label.Content = "Device version: " + ReadProp("ro.build.version.release");
+            string auth = adb.isAuthorized();
+            if (auth == "authorized")
+            {
+                Start_Button.IsEnabled = false;
+                Status_Label.Content = "Status: Pulling build.prop...";
+                PullProp();
+                Status_Label.Content = "Device version: " + ReadProp("ro.build.version.release");
+            }
+            if (auth == "unauthorized")
+            {
+                Status_Label.Content = "Device is unauthorized. Did you accept the USB debugging request?";
+                Start_Button.IsEnabled = true;
+            }
+            if (auth == "none")
+            {
+                Status_Label.Content = "Device not found. Do you have USB debugging enabled?";
+                Start_Button.IsEnabled = true;
+            }
         }
     }
 }

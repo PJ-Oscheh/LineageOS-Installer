@@ -74,7 +74,7 @@ namespace LineageOS_Installer
             //File.Delete(currentDir + "\\AdbWinUsbApi.dll");
         }
 
-        public bool isAuthorized()
+        public string isAuthorized()
         {
             System.Diagnostics.Process devicesAdb = new System.Diagnostics.Process();
             devicesAdb.StartInfo.FileName = "adb.exe";
@@ -87,17 +87,17 @@ namespace LineageOS_Installer
             if (devicesOutput.Contains("unauthorized"))
             {
                 Console.WriteLine("Device unautorized.");
-                return false;
+                return "unauthorized";
             }
             if (devicesOutput.Contains("device"))
             {
                 Console.WriteLine("Device authorized.");
-                return true;
+                return "authorized";
             }
             else
             {
                 Console.WriteLine("No devices were found. Is USB debugging enabled?");
-                return false;
+                return "none";
             }
         }
 
