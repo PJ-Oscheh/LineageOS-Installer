@@ -10,7 +10,7 @@ A prebuilt version (ready to install, the "normal user" version) can be found at
 
 This is the source for the UNOFFICIAL Lineage OS Installer for Windows. At the time of creating this program, Lineage OS is not prebuilt and ready for download, so when I tested it, I simply subsituted Lineage OS for CyanogenMod. It was tested on my Nexus 7 2013 WiFi (flo), and worked just fine. I do not know if it will work for non-nexus devices, but I am certain it will not work with Samsung devices, as the installation script does not utilize Download Mode. If enough people like the idea of this installer, I (or perhaps someone in the community) will give support to Samsung devices. If people begin to contribute, we can change the author name in the script and graphical program (this) from "PJBeans" to "LineageOS Community"
 
-PJBeans and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development, and has only been tested on a Nexus 7 2013 WiFi (flo).
+The developers of this application and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development, and has only been tested on a Nexus 7 2013 WiFi (flo).
 
 # What is here:
 
@@ -22,6 +22,16 @@ PJBeans and the LineageOS Community is not responsible for anyone who bricks the
 - Lineage OS Download page in embedded browser (for it is not live)
 - Support for Samsung Devices
 - Possibly support for other devices (If Fastboot mode acts differently for some reason on other devices; I am not sure)
+- A help (support) page
+
+# Goals
+To make this application as user friendly as possible, we should:
+- Create a help page
+- Find a way to run the batch scripts directly in the UI, and/or make it more user-friendly
+- Possibly materialize the UI
+- Make the insallation script more automatized. It currently pauses many times, and requires some user input on their device.
+- ^ (It would be quite hard to remove all user input, but let's try to minimize it as much as we can)
+- (Feel free to add more goals!)
 
 # FAQ:
 
