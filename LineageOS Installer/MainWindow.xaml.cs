@@ -31,5 +31,14 @@ namespace LineageOS_Installer
             disclaimer.Show();
             this.Close();
         }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Adb adb = new Adb();
+            Task.Factory.StartNew(() =>
+                {
+                    adb.Start();
+                });
+        }
     }
 }

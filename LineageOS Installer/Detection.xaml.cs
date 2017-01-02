@@ -32,7 +32,6 @@ namespace LineageOS_Installer
 
         public void PullProp()
         {
-            adb.Start();
             adb.Pull("system/build.prop");
             Console.WriteLine(adbPull_Output);
             adb.Stop();
@@ -60,7 +59,7 @@ namespace LineageOS_Installer
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            File.Delete(currentDir + "\\build.prop");
+            
         }
     }
 }

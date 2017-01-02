@@ -22,5 +22,6 @@
         </materialDesign:Card>
         <Image x:Name="Devices_Image" Source="images/devices.png" Width="240" Margin="276,196,276,133" Height="240" />
         <Label x:Name="Status_Label" Content="Status: Waiting for device..." HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" FontSize="20"/>
+        
     </Grid>
 </Window>
