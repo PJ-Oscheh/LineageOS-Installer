@@ -52,6 +52,24 @@ namespace LineageOS_Installer
             return null;
         }
 
+        public string getDeviceCodename()
+        {
+            StreamReader BuildProp = new StreamReader(Directory.GetCurrentDirectory().ToString() + "\\build.prop");
+            string line;
+            while ((line = BuildProp.ReadLine()) != null)
+            {
+                if (line.Contains("ro.product.device"))
+                {
+                    return line.Replace("ro.product.device=", null);
+                }
+                if (line.Contains("ro.cm.device"))
+                {
+                    return (line.Replace("ro.cm.device=", null));
+                }
+            }
+            return null;
+        }
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             adb.Start();
@@ -70,7 +88,7 @@ namespace LineageOS_Installer
                 Start_Button.IsEnabled = false;
                 Status_Label.Content = "Status: Pulling build.prop...";
                 PullProp();
-                Status_Label.Content = "Device version: " + ReadProp("ro.build.version.release");
+                Status_Label.Content = "Device codename: " + getDeviceCodename();
             }
             if (auth == "unauthorized")
             {
