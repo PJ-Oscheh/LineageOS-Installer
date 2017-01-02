@@ -25,11 +25,6 @@ namespace LineageOS_Installer
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Next_Button_Click(object sender, RoutedEventArgs e)
         {
             Disclaimer disclaimer = new Disclaimer();

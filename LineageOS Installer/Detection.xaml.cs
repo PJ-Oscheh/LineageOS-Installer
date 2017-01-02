@@ -23,41 +23,19 @@ namespace LineageOS_Installer
     {
         string adbPull_Output;
         string currentDir = Directory.GetCurrentDirectory().ToString();
+        Adb adb = new Adb();
 
         public Detection()
         {
             InitializeComponent();
         }
 
-        void ExtractResource(string resource, string path)
-        {
-            string[] resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
-            Stream stream = GetType().Assembly.GetManifestResourceStream(resource);
-            byte[] bytes = new byte[(int)stream.Length];
-            stream.Read(bytes, 0, bytes.Length);
-            File.WriteAllBytes(path, bytes);
-        }
-
         public void PullProp()
         {
-            
-            ExtractResource("LineageOS_Installer.adb.adb.exe", currentDir + "\\adb.exe");
-            ExtractResource("LineageOS_Installer.adb.AdbWinApi.dll", currentDir + "\\AdbWinApi.dll");
-            ExtractResource("LineageOS_Installer.adb.AdbWinUsbApi.dll", currentDir + "\\AdbWinUsbApi.dll");
-            System.Diagnostics.Process adbPull = new System.Diagnostics.Process();
-            adbPull.StartInfo.FileName = "cmd.exe";
-            adbPull.StartInfo.Arguments = "/c adb.exe pull system/build.prop";
-            adbPull.StartInfo.CreateNoWindow = true;
-            adbPull.StartInfo.UseShellExecute = false;
-            adbPull.StartInfo.RedirectStandardOutput = true;
-            adbPull.Start();
-
-            adbPull_Output = adbPull.StandardOutput.ReadToEnd().Replace("\r\n", null);
+            adb.Start();
+            adb.Pull("system/build.prop");
             Console.WriteLine(adbPull_Output);
-
-            File.Delete(currentDir + "\\adb.exe");
-            File.Delete(currentDir + "\\AdbWinApi.dll");
-            File.Delete(currentDir + "\\AdbWinUsbApi.dll");
+            adb.Stop();
         }
 
         public string ReadProp(string value)
@@ -78,7 +56,6 @@ namespace LineageOS_Installer
         {
             PullProp();
             Status_Label.Content = "Device version: " + ReadProp("ro.build.version.release");
-            
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
