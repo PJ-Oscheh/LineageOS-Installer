@@ -37,4 +37,9 @@ Public Class Form7
         installbatOut.WaitForExit(100)
         RichTextBox1.Text = sb.ToString()
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Form8.Show()
+        Me.Close()
+    End Sub
 End Class
