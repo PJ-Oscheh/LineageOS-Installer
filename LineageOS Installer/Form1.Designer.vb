@@ -73,7 +73,7 @@ Partial Class Form1
         Me.LinkLabel1.TabIndex = 2
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "More information"
-        Me.LinkLabel1.VisitedLinkColor = System.Drawing.Color.Blue
+        Me.LinkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
         '
         'Label3
         '
@@ -109,7 +109,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(248, 120)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(115, 114)
