@@ -29,6 +29,7 @@ Partial Class Form3
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,18 +41,18 @@ Partial Class Form3
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(609, 240)
         Me.WebBrowser1.TabIndex = 1
-        Me.WebBrowser1.Url = New System.Uri("about:blank", System.UriKind.Absolute)
+        Me.WebBrowser1.Url = New System.Uri("https://app01.lineageos.org/", System.UriKind.Absolute)
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.Label2.Location = New System.Drawing.Point(9, 83)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(433, 40)
+        Me.Label2.Size = New System.Drawing.Size(411, 38)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Below is the Lineage OS Download page. Select your device" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and download its image" &
-    ". It should be a .zip file." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Below is the Lineage OS Download page. Select your device" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "from the list, and dow" &
+    "nload its image. It should be a .zip file." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label3
         '
@@ -93,11 +94,22 @@ Partial Class Form3
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(16, 454)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(391, 17)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "The website is not complete, and may not load correctly at this time."
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 495)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label3)
@@ -122,4 +134,5 @@ Partial Class Form3
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label4 As Label
 End Class

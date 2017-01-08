@@ -31,8 +31,9 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -58,8 +59,8 @@ Partial Class Form1
         Me.Label2.Size = New System.Drawing.Size(495, 76)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Upon clicking ""Next"", you agree that the developers of this application" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and the " &
-    "Lineage OS Community is NOT responsible if you damage (brick)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " your device in t" &
-    "his process." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+    "Lineage OS Community is NOT responsible if you damage (brick)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "your device in th" &
+    "is process." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'LinkLabel1
         '
@@ -67,7 +68,7 @@ Partial Class Form1
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(253, 275)
+        Me.LinkLabel1.Location = New System.Drawing.Point(241, 275)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(126, 19)
         Me.LinkLabel1.TabIndex = 2
@@ -128,17 +129,16 @@ Partial Class Form1
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "ABOUT"
         '
-        'Label7
+        'PictureBox2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(281, 336)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 20)
-        Me.Label7.TabIndex = 11
-        Me.Label7.Text = "NEXT >"
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(263, 316)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
         '
         'Form1
         '
@@ -148,7 +148,7 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(610, 495)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
@@ -164,6 +164,7 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lineage OS Installer"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -177,5 +178,5 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

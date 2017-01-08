@@ -26,9 +26,9 @@ Partial Class Form13
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,12 +65,23 @@ Partial Class Form13
         Me.Panel2.Size = New System.Drawing.Size(612, 75)
         Me.Panel2.TabIndex = 11
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(12, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(397, 39)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Download TWRP Recovery"
+        '
         'WebBrowser1
         '
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 190)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(612, 179)
+        Me.WebBrowser1.Size = New System.Drawing.Size(612, 234)
         Me.WebBrowser1.TabIndex = 12
         '
         'PictureBox1
@@ -82,17 +93,6 @@ Partial Class Form13
         Me.PictureBox1.Size = New System.Drawing.Size(104, 53)
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(397, 39)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Download TWRP Recovery"
         '
         'Label4
         '

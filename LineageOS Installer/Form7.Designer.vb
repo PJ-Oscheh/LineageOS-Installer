@@ -38,10 +38,10 @@ Partial Class Form7
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label4.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(17, 374)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(478, 60)
+        Me.Label4.Size = New System.Drawing.Size(475, 60)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "You should see a seriel number under the List of devices attached." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Example:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & """c1" &
     "39049033212      device"""
@@ -49,10 +49,10 @@ Partial Class Form7
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label5.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(17, 85)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(414, 40)
+        Me.Label5.Size = New System.Drawing.Size(412, 40)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Connect your device with the USB cable that came with it." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Once you do that, clic" &
     "k ""Check Connection"""
