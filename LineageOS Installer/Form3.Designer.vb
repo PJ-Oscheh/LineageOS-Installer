@@ -41,7 +41,7 @@ Partial Class Form3
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(609, 240)
         Me.WebBrowser1.TabIndex = 1
-        Me.WebBrowser1.Url = New System.Uri("https://app01.lineageos.org/", System.UriKind.Absolute)
+        Me.WebBrowser1.Url = New System.Uri("https://download.lineageos.org/", System.UriKind.Absolute)
         '
         'Label2
         '
