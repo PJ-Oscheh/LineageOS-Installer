@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form3
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
@@ -39,6 +39,7 @@ Partial Class Form3
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 184)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 22)
         Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(609, 240)
         Me.WebBrowser1.TabIndex = 1
         Me.WebBrowser1.Url = New System.Uri("https://download.lineageos.org/", System.UriKind.Absolute)
@@ -49,7 +50,7 @@ Partial Class Form3
         Me.Label2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.Label2.Location = New System.Drawing.Point(9, 83)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(411, 38)
+        Me.Label2.Size = New System.Drawing.Size(410, 36)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Below is the Lineage OS Download page. Select your device" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "from the list, and dow" &
     "nload its image. It should be a .zip file." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
@@ -80,7 +81,7 @@ Partial Class Form3
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(321, 39)
+        Me.Label1.Size = New System.Drawing.Size(321, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Download LineageOS"
         '
