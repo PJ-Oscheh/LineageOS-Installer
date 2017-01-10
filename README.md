@@ -10,6 +10,12 @@ This is the source for the UNOFFICIAL Lineage OS Installer for Windows. At the t
 
 The developers of this application and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development, and has only been tested on a Nexus 7 2013 WiFi (flo).
 
+# How can I contribute?
+
+If you are a developer, you can edit this application as you normally would with any GitHub project. Once you make a few pull requests, you can request to become a Collaborator if you plan on makeing more commitments.
+
+If you are not a developer, you can help by writting better instructions for the user, e.g.: steps of the application clearer. Because you are not a developer, you probably do not have Visual Studio or another IDE, so just make your edits in Google docs. (Make a copy of https://docs.google.com/document/d/1b3fFbn1vUcqQQwB1BOBISWw4w1RQYtvlMi692S6M3So/edit?usp=sharing) Send your document to "chompy33" (PJBeans) on XDA through a private message.
+
 # What is here:
 
 - Embedded web browsers for downloading TWRP and LineageOS
@@ -20,12 +26,14 @@ The developers of this application and the LineageOS Community is not responsibl
 - Support for Samsung Devices
 - Possibly support for other devices (If Fastboot mode acts differently for some reason on other devices; I am not sure)
 - A help (support) page
+- A functioning embedded installation script (timeouts do not work correctly, and ping ends the script for some reason.)
 
 # Goals
 To make this application as user friendly as possible, we should:
 - Create a help page
-- Find a way to run the batch scripts directly in the UI, and/or make it more user-friendly
-- Possibly materialize the UI (almost done)
+- Fix the embedded Installation Script
+- Make it as fool-proof as we can. The user should feel comfortable with the application, and should not fear to unplug their device.
+- Materialize the UI (almost done)
 - Make the insallation script more automatized. It currently pauses many times, and requires some user input on their device.
 - ^ (It would be quite hard to remove all user input, but let's try to minimize it as much as we can)
 - (Feel free to add more goals!)
