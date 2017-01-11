@@ -11,11 +11,11 @@ https://docs.google.com/document/d/1b3fFbn1vUcqQQwB1BOBISWw4w1RQYtvlMi692S6M3So/
 sp=sharing [copy and paste that link]) Send your document to "chompy33" (PJBeans) on XDA through a 
 private message (just copy and paste)
 
-You can also create images you feel should be in this application, or modify images. The design for the 
-floating buttons (Next, About) are in the Git Repository at `\LineageOS Installer\images\`. For some 
-reason, they are currently also in the root directory; do NOT modify them! Please modify theme in the 
-directory specified  above, so I can easily merge your pull request. (See below if you do not have GitHub 
-or Git on your PC)
+You can also create images you feel should be in this application, modify, or delete
+images. The design for the floating buttons (Next, About) are in the Git Repository at 
+`\LineageOS Installer\images\`. For some reason, they are currently also in the root directory; 
+do NOT modify them! Please modify theme in the directory specified  above, so I can easily merge your 
+pull request. (See below if you do not have GitHub or Git on your PC)
 
 NOTE: Please download GitHub onto your PC and clone this program's source onto your desktop. Follow
 this guide: https://guides.github.com/introduction/getting-your-project-on-github/ (copy and paste 
