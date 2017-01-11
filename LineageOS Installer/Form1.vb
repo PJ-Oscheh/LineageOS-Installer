@@ -27,7 +27,7 @@
         Form8.Show()
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
         MsgBox("This application is developed by the contributions of PJBeans, Evilarceus. Photo Credit (Unblurred) - Christoph Schulz - UnSplash (Free to use)")
     End Sub
 
@@ -39,5 +39,9 @@
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Process.Start("C:\Tools\LineageOSInstaller\scripts\startup.bat")
         Form2.Show()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        MsgBox("This application is developed by the contributions of PJBeans, Evilarceus. Photo Credit (Unblurred) - Christoph Schulz - UnSplash (Free to use)")
     End Sub
 End Class
