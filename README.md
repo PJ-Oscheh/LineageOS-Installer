@@ -10,6 +10,9 @@ This is the source for the UNOFFICIAL Lineage OS Installer for Windows. At the t
 
 The developers of this application and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development, and has only been tested on a Nexus 7 2013 WiFi (flo).
 
+# How can I contribute?
+Whether or not you are a developer, you can contribute to this application! Check out [CONTRIBUTING](CONTRIBUTING)
+
 # What is here:
 
 - Embedded web browsers for downloading TWRP and LineageOS
