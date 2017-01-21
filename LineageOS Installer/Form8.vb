@@ -16,7 +16,15 @@ Public Class Form8
     End Sub
 
     Private Sub Label4_Click() Handles Label4.Click
-        Process.Start("C:\Tools\LineageOSInstaller\scripts\unlock_bl.bat")
+        Dim unlockbl As Process
+        unlockbl = New Process
+        unlockbl.StartInfo.FileName = "C:\Tools\LineageOSInstaller\scripts\unlock_bl.bat"
+        unlockbl.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+        unlockbl.StartInfo.UseShellExecute = True
+        unlockbl.StartInfo.WorkingDirectory = "C:\Tools\LineageOSInstaller\scripts"
+        unlockbl.Start()
+        unlockbl.WaitForExit()
+        Form11.Show()
     End Sub
 
     Private Sub Label5_Click() Handles Label5.Click
@@ -24,6 +32,14 @@ Public Class Form8
     End Sub
 
     Private Sub Label6_Click() Handles Label6.Click
-        Process.Start("C:\Tools\LineageOSInstaller\scripts\push_lineage.bat")
+        Dim pushlin As Process
+        pushlin = New Process
+        pushlin.StartInfo.FileName = "C:\Tools\LineageOSInstaller\scripts\push_lineage.bat"
+        pushlin.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+        pushlin.StartInfo.UseShellExecute = True
+        pushlin.StartInfo.WorkingDirectory = "C:\Tools\LineageOSInstaller\scripts"
+        pushlin.Start()
+        pushlin.WaitForExit()
+        Form10.Show()
     End Sub
 End Class
