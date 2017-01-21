@@ -8,27 +8,22 @@ Public Class Form8
     End Sub
 
     Private Sub Label3_Click() Handles Label3.Click
-        Dim sb = New StringBuilder()
-        Dim psi = New ProcessStartInfo() With
-    {
-            .WorkingDirectory = "C:\Tools\LineageOSInstaller\scripts\",
-            .FileName = "C:\Tools\LineageOSInstaller\scripts\install.bat",
-            .CreateNoWindow = True,
-            .RedirectStandardOutput = True,
-            .RedirectStandardInput = True,
-            .UseShellExecute = False
-    }
 
-        Dim installbatOut = New Process()
-        installbatOut.StartInfo = psi
-        AddHandler installbatOut.OutputDataReceived, Function(sender, args) sb.AppendLine(args.Data)
-        installbatOut.Start()
-        installbatOut.BeginOutputReadLine()
-        installbatOut.WaitForExit(100)
-        RichTextBox1.Text = sb.ToString()
     End Sub
 
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Label4_Click() Handles Label4.Click
+        Process.Start("C:\Tools\LineageOSInstaller\scripts\unlock_bl.bat")
+    End Sub
+
+    Private Sub Label5_Click() Handles Label5.Click
+        Process.Start("C:\Tools\LineageOSInstaller\scripts\flash_recovery.bat")
+    End Sub
+
+    Private Sub Label6_Click() Handles Label6.Click
+        Process.Start("C:\Tools\LineageOSInstaller\scripts\push_lineage.bat")
     End Sub
 End Class
