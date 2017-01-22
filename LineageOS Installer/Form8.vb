@@ -28,18 +28,18 @@ Public Class Form8
     End Sub
 
     Private Sub Label5_Click() Handles Label5.Click
-        Process.Start("C:\Tools\LineageOSInstaller\scripts\flash_recovery.bat")
+        Dim flashrecovery As Process
+        flashrecovery = New Process
+        flashrecovery.StartInfo.FileName = "C:\Tools\LineageOSInstaller\scripts\flash_recovery.bat"
+        flashrecovery.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+        flashrecovery.StartInfo.UseShellExecute = True
+        flashrecovery.StartInfo.WorkingDirectory = "C:\Tools\LineageOSInstaller\scripts"
+        flashrecovery.Start()
+        flashrecovery.WaitForExit()
+        Form15.Show()
     End Sub
 
     Private Sub Label6_Click() Handles Label6.Click
-        Dim pushlin As Process
-        pushlin = New Process
-        pushlin.StartInfo.FileName = "C:\Tools\LineageOSInstaller\scripts\push_lineage.bat"
-        pushlin.StartInfo.WindowStyle = ProcessWindowStyle.Normal
-        pushlin.StartInfo.UseShellExecute = True
-        pushlin.StartInfo.WorkingDirectory = "C:\Tools\LineageOSInstaller\scripts"
-        pushlin.Start()
-        pushlin.WaitForExit()
         Form10.Show()
     End Sub
 End Class

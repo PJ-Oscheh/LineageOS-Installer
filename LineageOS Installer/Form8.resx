@@ -120,15 +120,17 @@
   <data name="Label3.Text" xml:space="preserve">
     <value>Below are 3 buttons. Each will open an external, black window
 with text in it. Do not close this window; it will close on its own.
-After the black window closes, click the next button.
+After the black window closes, click the next button. You do
+NOT need to do anything with your device unless you are
+instructed to do so.
 
 Instructions:
 Click "Unlock Bootloader."
-External window appears.
-External window closes.
+An External window will appear.
+The External window closes.
 Click "Flash Custom Recovery."
-External window appears.
-External window closes.
+An External window will appear.
+The External window closes.
 Click Install "LineageOS."</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

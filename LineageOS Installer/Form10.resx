@@ -118,18 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Tap 'Wipe' then 'Advance Wipe'
+    <value>On your device, swipe to allow modifications.
+Tap 'Wipe' then 'Advance Wipe'
 Select all the options (except MicroSD Card if that is present)
 Slide to wipe the device.
-After you wipe the device, tap the Home button.
-On your device, select 'Install'
-Select 'lineageos.zip'
-Slide to flash the zip. This will install LineageOS.
-After LineageOS installs, tap "Reboot System."
-LineageOS should start. It may appear to bootloop 
-(The boot animation going forever without  starting the OS), 
-but just be patient!
-Enjoy your fresh new device ;)
-</value>
+After you wipe the device, click "OK" below. Do not touch
+your device until you are instructed to do so.
+
+
+If the display ever turns off, don't worry. When you need to
+interact with your device later, tapping the screen will wake it
+up.</value>
   </data>
 </root>

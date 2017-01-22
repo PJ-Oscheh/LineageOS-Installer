@@ -83,6 +83,7 @@ Partial Class Form13
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(612, 234)
         Me.WebBrowser1.TabIndex = 12
+        Me.WebBrowser1.Url = New System.Uri("https://twrp.me/Devices/", System.UriKind.Absolute)
         '
         'PictureBox1
         '

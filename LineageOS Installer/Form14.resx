@@ -118,13 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Click the power button to start Android. It will boot into 
-stock android. This may take up to 20 minutes. 
-Set up the device as normal. You do not need to
-set up your Google account or
-restore your apps; the device will be wiped.
-Re-enable Developer Options, 
-USB Debugging, and if necessary, OEM Unlocking.
+    <value>On your device, tap the Home button.
+Select 'Install'
+Select 'lineageos.zip'
+Slide to flash the zip. This will install LineageOS.
+After LineageOS installs, tap "Reboot System."
+LineageOS should start. It may appear to bootloop 
+(The boot animation going forever without  starting the OS), 
+but just be patient!
+Enjoy your fresh new device ;)
 </value>
   </data>
 </root>

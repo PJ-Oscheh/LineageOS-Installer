@@ -38,7 +38,7 @@
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Process.Start("C:\Tools\LineageOSInstaller\scripts\startup.bat")
-        Form2.Show()
+        Form16.Show()
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click

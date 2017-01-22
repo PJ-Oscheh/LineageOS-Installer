@@ -104,7 +104,7 @@ Partial Class Form8
         Me.Label3.Font = New System.Drawing.Font("Roboto", 10.0!)
         Me.Label3.Location = New System.Drawing.Point(21, 122)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(391, 216)
+        Me.Label3.Size = New System.Drawing.Size(391, 252)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = resources.GetString("Label3.Text")
         '
@@ -113,10 +113,10 @@ Partial Class Form8
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 495)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
