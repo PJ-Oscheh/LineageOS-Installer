@@ -184,5 +184,10 @@ namespace LineageOS_Installer
             getDeviceInfo();
             Console.WriteLine("Done!");
         }
+
+        private void Quit_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

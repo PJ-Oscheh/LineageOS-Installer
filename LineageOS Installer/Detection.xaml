@@ -24,6 +24,7 @@
         <Label x:Name="Status_Label" Content="Please plug in your device." HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Button x:Name="Start_Button" Content="Start" HorizontalAlignment="Center" Margin="359,448,359,0" VerticalAlignment="Top" Width="74" Click="Start_Button_Click"/>
         <ProgressBar x:Name="Loading_Bar" HorizontalAlignment="Center" Height="10" Margin="0,496,0,0" VerticalAlignment="Top" Width="150" IsIndeterminate="True" HorizontalContentAlignment="Center" Visibility="Hidden" />
+        <Button x:Name="Quit_Button" Content="Quit" HorizontalAlignment="Left" Margin="16,517,0,0" VerticalAlignment="Top" Width="75" Click="Quit_Button_Click"/>
 
     </Grid>
 </Window>
