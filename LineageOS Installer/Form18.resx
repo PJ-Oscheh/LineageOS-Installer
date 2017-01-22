@@ -117,12 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>On your device, tap the Home button.
-Select 'Install'
-Select 'lineageos.zip'
-Slide to flash the zip. This will install LineageOS.
-After LineageOS installs, tap the Home button.
-(We're NOT done yet; don't reboot the system!)</value>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>If you haven't already, tap the Home button.
+Now tap Install. 
+Choose "gapps.zip"
+Slide to flash the zip. This will install your
+Google Apps.
+After your Gapps install, tap "Wipe Cache/Dalvik"
+After you wipe the cache and Dalvik Cache, tap
+"Reboot System."
+LineageOS should start. It may appear to bootloop 
+(The boot animation going forever without  
+starting the OS),  but just be patient! It may take
+up to 20 minutes.
+Enjoy your fresh new device ;)
+
+
+</value>
   </data>
 </root>

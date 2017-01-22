@@ -49,10 +49,11 @@ Partial Class Form13
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Roboto", 9.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Red
         Me.Label3.Location = New System.Drawing.Point(25, 159)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(288, 13)
+        Me.Label3.Size = New System.Drawing.Size(317, 15)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Save as C:\Tools\LineageOSInstaller\LinOS-Files\recovery"
         '
@@ -81,6 +82,7 @@ Partial Class Form13
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 190)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(612, 234)
         Me.WebBrowser1.TabIndex = 12
         Me.WebBrowser1.Url = New System.Uri("https://twrp.me/Devices/", System.UriKind.Absolute)
@@ -121,7 +123,7 @@ Partial Class Form13
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form13"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Lineage OS Installer"
+        Me.Text = "LineageOS Installer"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

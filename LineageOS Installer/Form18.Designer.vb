@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form14
+Partial Class Form18
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form14
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form14))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form18))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -30,25 +30,25 @@ Partial Class Form14
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(403, 298)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(350, 120)
+        Me.Label1.Size = New System.Drawing.Size(30, 20)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = resources.GetString("Label1.Text")
+        Me.Label1.Text = "OK"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(403, 298)
+        Me.Label2.Font = New System.Drawing.Font("Roboto", 12.0!)
+        Me.Label2.Location = New System.Drawing.Point(12, 12)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 20)
+        Me.Label2.Size = New System.Drawing.Size(367, 300)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "OK"
+        Me.Label2.Text = resources.GetString("Label2.Text")
         '
-        'Form14
+        'Form18
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -57,9 +57,9 @@ Partial Class Form14
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form14"
+        Me.Name = "Form18"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form14"
+        Me.Text = "Form18"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

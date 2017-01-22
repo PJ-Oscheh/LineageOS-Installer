@@ -77,7 +77,7 @@ Partial Class Form9
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form9"
-        Me.Text = "Lineage OS Installer - Help"
+        Me.Text = "LineageOS Installer - Help"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

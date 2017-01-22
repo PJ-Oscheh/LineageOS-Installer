@@ -50,7 +50,7 @@ Partial Class Form3
         Me.Label2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.Label2.Location = New System.Drawing.Point(9, 83)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(410, 36)
+        Me.Label2.Size = New System.Drawing.Size(411, 38)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Below is the Lineage OS Download page. Select your device" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "from the list, and dow" &
     "nload its image. It should be a .zip file." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
@@ -58,10 +58,11 @@ Partial Class Form3
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Roboto", 9.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Red
         Me.Label3.Location = New System.Drawing.Point(11, 146)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(307, 14)
+        Me.Label3.Size = New System.Drawing.Size(324, 15)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Save as C:\Tools\LineageOSInstaller\LinOS-Files\lineageos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -81,7 +82,7 @@ Partial Class Form3
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(321, 38)
+        Me.Label1.Size = New System.Drawing.Size(321, 39)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Download LineageOS"
         '
@@ -121,7 +122,7 @@ Partial Class Form3
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Lineage OS Installer"
+        Me.Text = "LineageOS Installer"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

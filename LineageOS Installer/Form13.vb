@@ -17,7 +17,7 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Form4.Show()
+        Form17.Show()
         Me.Close()
     End Sub
 
