@@ -11,6 +11,7 @@ namespace LineageOS_Installer
     class Adb
     {
         string currentDir = Directory.GetCurrentDirectory().ToString();
+        string tempDir = Path.GetTempPath() + "LineageOS-Installer";
         string pullOutput;
 
         private void ExtractResource(string resource, string path)
@@ -27,16 +28,23 @@ namespace LineageOS_Installer
 
         public void Start()
         {
+            if (!Directory.Exists(tempDir))
+            {
+                Directory.CreateDirectory(tempDir);
+            }
+            Console.WriteLine(tempDir);
+            Console.WriteLine(tempDir + "\\adb.exe");
             // Extract adb and libraries
-            ExtractResource("LineageOS_Installer.adb.adb.exe", currentDir + "\\adb.exe");
-            ExtractResource("LineageOS_Installer.adb.AdbWinApi.dll", currentDir + "\\AdbWinApi.dll");
-            ExtractResource("LineageOS_Installer.adb.AdbWinUsbApi.dll", currentDir + "\\AdbWinUsbApi.dll");
+            ExtractResource("LineageOS_Installer.adb.adb.exe", tempDir + "\\adb.exe");
+            ExtractResource("LineageOS_Installer.adb.AdbWinApi.dll", tempDir + "\\AdbWinApi.dll");
+            ExtractResource("LineageOS_Installer.adb.AdbWinUsbApi.dll", tempDir + "\\AdbWinUsbApi.dll");
+            
 
             // Start ADB server
             if (System.Diagnostics.Process.GetProcessesByName("adb.exe").Length == 0)
             {
                 System.Diagnostics.Process startAdb = new System.Diagnostics.Process();
-                startAdb.StartInfo.FileName = "adb.exe";
+                startAdb.StartInfo.FileName = tempDir + "\\adb.exe";
                 startAdb.StartInfo.Arguments = "start-server";
                 startAdb.StartInfo.CreateNoWindow = true;
                 startAdb.StartInfo.UseShellExecute = false;
@@ -50,7 +58,7 @@ namespace LineageOS_Installer
         {
             // Stop ADB server
             System.Diagnostics.Process stopAdb = new System.Diagnostics.Process();
-            stopAdb.StartInfo.FileName = "adb.exe";
+            stopAdb.StartInfo.FileName = tempDir + "\\adb.exe";
             stopAdb.StartInfo.Arguments = "kill-server";
             stopAdb.StartInfo.CreateNoWindow = true;
             stopAdb.StartInfo.UseShellExecute = false;
@@ -77,7 +85,7 @@ namespace LineageOS_Installer
         public string isAuthorized()
         {
             System.Diagnostics.Process devicesAdb = new System.Diagnostics.Process();
-            devicesAdb.StartInfo.FileName = "adb.exe";
+            devicesAdb.StartInfo.FileName = tempDir + "\\adb.exe";
             devicesAdb.StartInfo.Arguments = "devices";
             devicesAdb.StartInfo.CreateNoWindow = true;
             devicesAdb.StartInfo.UseShellExecute = false;
@@ -104,7 +112,7 @@ namespace LineageOS_Installer
         public void Pull(string file)
         {
             System.Diagnostics.Process pullAdb = new System.Diagnostics.Process();
-            pullAdb.StartInfo.FileName = "adb.exe";
+            pullAdb.StartInfo.FileName = tempDir + "\\adb.exe";
             pullAdb.StartInfo.Arguments = "pull " + file;
             pullAdb.StartInfo.CreateNoWindow = true;
             pullAdb.StartInfo.UseShellExecute = false;
