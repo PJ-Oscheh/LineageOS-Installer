@@ -28,12 +28,20 @@ namespace LineageOS_Installer
 
         public void Start()
         {
+            // Create temp directory
             if (!Directory.Exists(tempDir))
             {
                 Directory.CreateDirectory(tempDir);
             }
             Console.WriteLine(tempDir);
             Console.WriteLine(tempDir + "\\adb.exe");
+
+            // Stop any running adb daemons
+            foreach (var process in System.Diagnostics.Process.GetProcessesByName("adb.exe"))
+            {
+                process.Kill();
+            }
+
             // Extract adb and libraries
             ExtractResource("LineageOS_Installer.adb.adb.exe", tempDir + "\\adb.exe");
             ExtractResource("LineageOS_Installer.adb.AdbWinApi.dll", tempDir + "\\AdbWinApi.dll");
