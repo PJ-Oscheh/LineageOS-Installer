@@ -118,20 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label3.Text" xml:space="preserve">
-    <value>Below are 3 buttons. Each will open an external, black window
-with text in it. Do not close this window; it will close on its own.
-After the black window closes, click the next button. You do
-NOT need to do anything with your device unless you are
-instructed to do so.
+    <value>Click Start to begin the installation. DO NOT DISCONNECT YOUR DEVICE during
+this process. Your device and/or this program may appear to freeze, but don't
+worry! It's just doing something in the background.
 
-Instructions:
-Click "Unlock Bootloader."
-An External window will appear.
-The External window closes.
-Click "Flash Custom Recovery."
-An External window will appear.
-The External window closes.
-Click Install "LineageOS."</value>
+Black external windows will appear. Do not exit out of them; they will exit on their
+own.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

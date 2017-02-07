@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form13
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,18 @@ Partial Class Form13
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form13))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
+        Me.WebControl2 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +53,7 @@ Partial Class Form13
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Roboto", 9.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(25, 159)
+        Me.Label3.Location = New System.Drawing.Point(25, 155)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(317, 15)
         Me.Label3.TabIndex = 9
@@ -77,16 +79,6 @@ Partial Class Form13
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Download TWRP Recovery"
         '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 190)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(612, 234)
-        Me.WebBrowser1.TabIndex = 12
-        Me.WebBrowser1.Url = New System.Uri("https://twrp.me/Devices/", System.UriKind.Absolute)
-        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
@@ -108,14 +100,28 @@ Partial Class Form13
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "I ALREADY DOWNLOADED TWRP"
         '
+        'WebControl1
+        '
+        Me.WebControl1.Location = New System.Drawing.Point(0, 225)
+        Me.WebControl1.Size = New System.Drawing.Size(612, 199)
+        Me.WebControl1.Source = New System.Uri("https://twrp.me/Devices/", System.UriKind.Absolute)
+        Me.WebControl1.TabIndex = 15
+        '
+        'WebControl2
+        '
+        Me.WebControl2.Location = New System.Drawing.Point(0, 170)
+        Me.WebControl2.Size = New System.Drawing.Size(611, 260)
+        Me.WebControl2.Source = New System.Uri("https://twrp.me/Devices/", System.UriKind.Absolute)
+        Me.WebControl2.TabIndex = 15
+        '
         'Form13
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 495)
+        Me.Controls.Add(Me.WebControl2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -134,8 +140,9 @@ Partial Class Form13
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents WebBrowser1 As WebBrowser
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
+    Private WithEvents WebControl1 As Awesomium.Windows.Forms.WebControl
+    Private WithEvents WebControl2 As Awesomium.Windows.Forms.WebControl
 End Class

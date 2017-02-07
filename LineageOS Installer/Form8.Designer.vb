@@ -29,6 +29,7 @@ Partial Class Form8
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -69,7 +70,7 @@ Partial Class Form8
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(379, 342)
+        Me.Label4.Location = New System.Drawing.Point(385, 339)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(177, 20)
         Me.Label4.TabIndex = 14
@@ -97,15 +98,25 @@ Partial Class Form8
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "INSTALL LINEAGEOS"
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(275, 160)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(60, 20)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "START"
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Roboto", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(21, 122)
+        Me.Label3.Font = New System.Drawing.Font("Roboto", 12.0!)
+        Me.Label3.Location = New System.Drawing.Point(17, 196)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(391, 252)
-        Me.Label3.TabIndex = 17
+        Me.Label3.Size = New System.Drawing.Size(576, 120)
+        Me.Label3.TabIndex = 19
         Me.Label3.Text = resources.GetString("Label3.Text")
         '
         'Form8
@@ -113,8 +124,9 @@ Partial Class Form8
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 495)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel2)
@@ -135,5 +147,6 @@ Partial Class Form8
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
     Friend WithEvents Label3 As Label
 End Class

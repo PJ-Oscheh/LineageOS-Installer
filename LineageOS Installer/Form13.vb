@@ -24,4 +24,12 @@
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         MsgBox("If you already downloaded TWRP, just ensure your file is in C:\Tools\LineageOSInstaller\LinOS-Files\ and is named 'recovery'")
     End Sub
+
+    Private Sub Awesomium_Windows_Forms_WebControl_ShowCreatedWebView(sender As Object, e As Awesomium.Core.ShowCreatedWebViewEventArgs) Handles WebControl1.ShowCreatedWebView
+
+    End Sub
+
+    Private Sub Awesomium_Windows_Forms_WebControl_ShowCreatedWebView_1(sender As Object, e As Awesomium.Core.ShowCreatedWebViewEventArgs) Handles WebControl2.ShowCreatedWebView
+
+    End Sub
 End Class
