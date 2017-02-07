@@ -1,7 +1,7 @@
 # Lineage-OS-Installer
 A (currently) unofficial installer for LineageOS written in Visual Basic.
 
-NOTE: In the next commit, the embdedded browsers will be replaced by a better solution called Awesomium. Please download it at "http://www.awesomium.com/download." This will allow us to render web pages correctly, as well as embed the open gapps page, as it is based on Chromium.
+NOTE: The embdedded browsers have been replaced by a better solution called Awesomium. Please download it at "http://www.awesomium.com/download." This will allow us to render web pages correctly, as it is based on Chromium.
 
 The Installation Script (as explained in the FAQ) can be found at: https://gist.github.com/PJBeans/be9a2c2635660e51cb0a135a33ab1e22
 or in the `batch-scripts_prebuilt` directory.
