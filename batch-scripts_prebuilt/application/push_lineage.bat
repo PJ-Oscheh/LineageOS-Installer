@@ -1,4 +1,6 @@
 @echo off
+echo DEPRECATED - Use install_lineage.bat instead.
+pause
 echo Sending Files to your device. This will take a few minutes, and the window may appear to freeze; this is normal. Do not disconnect your device or close this window.
 echo.
 echo Sending LineageOS to your device...
