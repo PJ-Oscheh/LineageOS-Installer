@@ -42,10 +42,10 @@ Partial Class Form3
         Me.Label2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.Label2.Location = New System.Drawing.Point(9, 83)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(411, 38)
+        Me.Label2.Size = New System.Drawing.Size(597, 38)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Below is the Lineage OS Download page. Select your device" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "from the list, and dow" &
-    "nload its image. It should be a .zip file." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Below is the Lineage OS Download page. Select your device from the list, and down" &
+    "load " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "its image.  It should be a .zip file. Click the link closest to the top." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label3
         '
