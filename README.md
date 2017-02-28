@@ -14,7 +14,7 @@ Whether or not you are a developer, you can contribute to this application! Chec
 
 # What is here:
 
-- Embedded web browsers for downloading TWRP and LineageOS
+- Embedded web browsers for downloading TWRP, GApps, and LineageOS
 - Images to illustrate where to find Developer Options, USB Debugging, and OEM Unlocking
 - The prebuilt program includes a setup script that copies all needed files.
 
