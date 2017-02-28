@@ -3,9 +3,6 @@ A (currently) unofficial installer for LineageOS written in Visual Basic.
 
 NOTE: The embdedded browsers have been replaced by a better solution called Awesomium. Please download it at "http://www.awesomium.com/download." This will allow us to render web pages correctly, as it is based on Chromium.
 
-The Installation Script (as explained in the FAQ) can be found at: https://gist.github.com/PJBeans/be9a2c2635660e51cb0a135a33ab1e22
-or in the `batch-scripts_prebuilt` directory.
-
 A prebuilt version (ready to install, the "normal user" version) can be found at https://drive.google.com/file/d/0B70zQND1cM1WQVFjYi0yZy1BVnc/view?usp=sharing, although I would not recommend using it this early in this program's life.
 
 This is the source for the UNOFFICIAL Lineage OS Installer for Windows. At the time of creating this program, Lineage OS is not prebuilt and ready for download, so when I tested it, I simply subsituted Lineage OS for CyanogenMod. It was tested on my Nexus 7 2013 WiFi (flo), and worked just fine. I do not know if it will work for non-nexus devices, but I am certain it will not work with Samsung devices, as the installation script does not utilize Download Mode. If enough people like the idea of this installer, I (or perhaps someone in the community) will give support to Samsung devices. If people begin to contribute, we can change the author name in the script and graphical program (this) from "PJBeans" to "LineageOS Community"
@@ -43,7 +40,7 @@ This program is an unofficial almost-automatic install for Lineage OS, designed 
 
 [-] What does this program do?
 
-This program on its own does not do much; in fact, all it does it give 2 embedded web browsers to download Lineage OS and TWRP. However, it gives a step-by-step explanition on what do, where to save the files, and what to name them. Lineage OS is acually installed through the script located at the top of this document.
+This program on its own does not do much; in fact, all it does it give 2 embedded web browsers to download Lineage OS and TWRP. However, it gives a step-by-step explanition on what do, where to save the files, and what to name them. Lineage OS is acually installed through multiple scripts included in this repository.
 
 [-] Why would I want to use this?
 
