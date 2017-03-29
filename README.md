@@ -49,7 +49,3 @@ Well, you probably don't. This installer was made for folks who would like to in
 [-] What does the Installation Script do?
 
 The Installation script, normally located at `C:\Tools\LineageOSInstaller\scripts\`, is what acually installes LineageOS onto the device. It gives the user instructions of what needs to be done, and automatically unlocks the bootloader, flashes recovery, and pushes LineageOS.zip to the user (not all at the same time, of course). There are other scripts, however, I did not feel the need to upload them; setup.bat simply sets up the C:\Tools\ directory for the program, adb_check is simply `adb_devices`, and starup.bat simply creates the folder LinOS-Files. I am willing to upload any of these files upon request.
-
-# A few things to mention:
-
-I made this program because I know installing a ROM can come across as difficult for someone who never did it before. Now, I only know some Visual Basic, but not all (which is why the program is so simple). I apologize if some files are missing in this Git Repository, I acually never uploaded to GitHub before. So basically, I know how to install ROMS, however, am not a very skilled developer (although I am learning), so I ask that if I did forget something in this repository that you do not yell in all caps at me. Thank you for understanding.
