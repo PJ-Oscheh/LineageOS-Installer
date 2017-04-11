@@ -1,19 +1,10 @@
 If you are a developer:
 
-You can edit this application as you normally would with any GitHub project. Once you make a few pull 
-requests, you can request to become a Collaborator if you plan on makeing more commitments.
+You can edit this application as you normally would with any GitHub project.
 
-
-You can help by writing better instructions for the user, e.g.: steps of the application clearer. Because 
-you are not a developer, you probably do not have Visual Studio or another IDE, so just make your edits 
-in Google docs. (Make a copy of 
-https://docs.google.com/document/d/1b3fFbn1vUcqQQwB1BOBISWw4w1RQYtvlMi692S6M3So/edit?u
-sp=sharing [copy and paste that link]) Send your document to "chompy33" (PJBeans) on XDA through a 
-private message (just copy and paste)
-
-You can also create images you feel should be in this application, modify, or delete
-images. The design for the floating buttons (Next, About) are in the Git Repository at 
-`/LineageOS Installer/images/`.  (See below if you do not have GitHub or Git on your PC)
+You can also create, modify, or delete images you feel should be in this application.
+The design for the floating buttons (Next, About) are in the Git Repository at 
+`/LineageOS Installer/images/`.
 
 NOTE: Please download GitHub onto your PC and clone this program's source onto your desktop. Follow
 this guide: https://guides.github.com/introduction/getting-your-project-on-github/ (copy and paste 
