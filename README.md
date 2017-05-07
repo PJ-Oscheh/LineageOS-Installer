@@ -1,4 +1,4 @@
-# Lineage-OS-Installer
+# LineageOS-Installer
 A simple, graphical solution to installing LineageOS.
 
 NOTE 1: The repository has been renamed from `Lineage-OS-Installer` to `LineageOS-Installer`. Keep this in mind next time you commit to the repository if something goes wrong.
