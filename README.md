@@ -5,16 +5,18 @@ NOTE 1: The repository has been renamed from `Lineage-OS-Installer` to `LineageO
 
 NOTE 2: The embedded browsers have been replaced by a better solution called Awesomium. Please download it at "http://www.awesomium.com/download." This will allow us to render web pages correctly, as it is based on Chromium.
 
-NOTE 3: I am aware of the issue with the prebuilt application not working. Please build it from the source until I fix the issue. I issue is that Awesomium is not bundled with the application. I'll fix this when I find time, or if someone else who actually has time on their hands fixes it instead would be great.
+A prebuilt version (ready to install, the "normal user" version) can be found [here](https://github.com/PJBeans/LineageOS-Installer/releases). However, the application is still young, so do not expect it to work perfectly (so back up your data and understand what you will have to do in case you/the application mess up). If you have a Nexus device, this _should_ work like a charm. Also, if you have a device that follows the process of "Unlock the bootloader with `fastboot oem unlock`, flash recovery, flash the rom," the installer will probably work, although it has a higher chance of failure. But if you're _daring_ enough to try the installer, give it a whirl! Report your results (good or bad) at [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172)
 
-A prebuilt version (ready to install, the "normal user" version) can be found at the XDA forum post for this application, although the application is still young, so use it only for testing purposes. Regardless, we recommend building off of the source so you have the most up-to-date version.
+The developers of this application and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development.
 
-This is the source for the UNOFFICIAL Lineage OS Installer for Windows. At the time of creating this program, Lineage OS is not prebuilt and ready for download, so when I tested it, I simply substituted Lineage OS for CyanogenMod. It was tested on my Nexus 7 2013 WiFi (flo) and worked just fine. I do not know if it will work for non-nexus devices, but I am certain it will not work with Samsung devices, as the installation script does not utilize Download Mode. If enough people like the idea of this installer, I (or perhaps someone in the community) will give support to Samsung devices. If people begin to contribute, we can change the author name in the script and graphical program (this) from "PJBeans" to "LineageOS Community"
-
-The developers of this application and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development and has only been tested on a Nexus 7 2013 WiFi (flo).
+TESTED DEVICES:
+  Nexus 7 2013 [WiFi] (flo) by PJBeans on 1.4.0 
+    -Worked like a charm
+ Nexus 5X by NateDev on 1.2.0
+    -Worked, although ADB and Fastboot didn't function correctly out-of-the-box.
 
 # How can I contribute?
-Whether or not you are a developer, you can contribute to this application! Check out [CONTRIBUTING](CONTRIBUTING)
+You can contribute right here on GitHub! If you know Visual Basic, feel free to modify the installer to fix an issue, add something or delete something obsolete. You can also test the installer for your device, and report your results on [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172). 
 
 # What is here:
 
@@ -26,16 +28,12 @@ Whether or not you are a developer, you can contribute to this application! Chec
 - Support for Samsung Devices
 - Possibly support for other devices (If Fastboot mode acts differently for some reason on other devices; I am not sure)
 - A help (support) page
-- A functioning embedded installation script (timeouts do not work correctly, and ping ends the script for some reason.)
 
 # Goals
 To make this application as user-friendly as possible, we should:
 - Create a help page
-- Fix the embedded Installation Script
 - Make it as fool-proof as we can. The user should feel comfortable with the application, and should not fear to unplug their device.
-- Materialize the UI (almost done)
-- Make the installation script more automatized. It currently pauses many times and requires some user input on their device.
-- ^ (It would be quite hard to remove all user input, but let's try to minimize it as much as we can)
+- If possible, automize the installation to a greater level.
 - (Feel free to add more goals!)
 
 # FAQ:
