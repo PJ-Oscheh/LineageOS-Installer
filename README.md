@@ -42,12 +42,9 @@ This program is an unofficial almost-automatic install for Lineage OS, designed 
 
 [-] What does this program do?
 
-This program on its own does not do much; in fact, all it does it give 2 embedded web browsers to download Lineage OS and TWRP. However, it gives a step-by-step explanation of what do, where to save the files, and what to name them. Lineage OS is actually installed through multiple scripts included in this repository.
+This program on its own does not do much; in fact, all it does it give 2 embedded web browsers to download Lineage OS and TWRP. However, it gives a step-by-step explanation of what do, where to save the files, and what to name them. Lineage OS is actually installed through multiple scripts included in this repository. Those scripts allow the user to install LineageOS without interacting with the TWRP recovery and typing commands.
 
 [-] Why would I want to use this?
 
-Well, you probably don't. This installer was made for folks who would like to install Lineage OS on their phone or tablet, but are too scared to, and just would like to have it on their phone or tablet, and be done. *If you want to learn how to install ROMS, already know how to install ROMS, or are a developer, this program is not for you.
+Well, you probably don't. This installer was made for folks who would like to install Lineage OS on their phone or tablet, but are too scared to, and just would like to have it on their phone or tablet, and be done. *If you want to learn how to install ROMS, already know how to install ROMS, or are a developer, this program is not for you.* (In the next update, the program will be friendlier towards developers who just need to flash the ROM quickly.)
 
-[-] What does the Installation Script do?
-
-The Installation script, normally located at `C:\Tools\LineageOSInstaller\scripts\`, is what actually installs LineageOS onto the device. It gives the user instructions on what needs to be done, and automatically unlocks the bootloader, flashes recovery, and pushes LineageOS.zip to the user (not all at the same time, of course). There are other scripts, however, I did not feel the need to upload them; setup.bat simply sets up the C:\Tools\ directory for the program, adb_check is simply `adb_devices`, and starup.bat simply creates the folder LinOS-Files. I am willing to upload any of these files upon request.
