@@ -46,5 +46,5 @@ This program on its own does not do much; in fact, all it does it give 2 embedde
 
 [-] Why would I want to use this?
 
-Well, you probably don't. This installer was made for folks who would like to install Lineage OS on their phone or tablet, but are too scared to, and just would like to have it on their phone or tablet, and be done. *If you want to learn how to install ROMS, already know how to install ROMS, or are a developer, this program is not for you.* (In the next update, the program will be friendlier towards developers who just need to flash the ROM quickly.)
+Well, you probably don't. This installer was made for folks who would like to install Lineage OS on their phone or tablet, but are too scared to, and just would like to have it on their phone or tablet, and be done. *If you want to learn how to install ROMS, already know how to install ROMS, or are a developer, this program is not for you.* (In the next update, the program will be friendlier toward developers who just need to flash the ROM quickly.)
 
