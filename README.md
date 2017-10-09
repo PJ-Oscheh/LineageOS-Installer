@@ -10,10 +10,8 @@ A prebuilt version (ready to install, the "normal user" version) can be found [h
 The developers of this application and the LineageOS Community is not responsible for anyone who bricks their devices. This tool is still in development.
 
 TESTED DEVICES:
-  Nexus 7 2013 [WiFi] (flo) by PJBeans on 1.4.0 
-    -Worked like a charm
- Nexus 5X by NateDev on 1.2.0
-    -Worked, although ADB and Fastboot didn't function correctly out-of-the-box.
+ - Nexus 7 2013 [WiFi] (flo) by PJBeans on 1.4.0: Worked like a charm
+ - Nexus 5X by NateDev on 1.2.0: Worked, although ADB and Fastboot didn't function correctly out-of-the-box.
 
 # How can I contribute?
 You can contribute right here on GitHub! If you know Visual Basic, feel free to modify the installer to fix an issue, add something or delete something obsolete. You can also test the installer for your device, and report your results on [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172). 
