@@ -13,26 +13,26 @@ TESTED DEVICES:
  - Nexus 7 2013 [WiFi] (flo) by PJBeans on 1.4.0: Worked like a charm
  - Nexus 5X by NateDev on 1.2.0: Worked, although ADB and Fastboot didn't function correctly out-of-the-box.
 
-# How can I contribute?
+## How can I contribute?
 You can contribute right here on GitHub! If you know Visual Basic, feel free to modify the installer to fix an issue, add something or delete something obsolete. You can also test the installer for your device, and report your results on [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172). 
 
-# What is here:
+## What is here:
 
 - Embedded web browsers for downloading TWRP, GApps, and LineageOS
 - Images to illustrate where to find Developer Options, USB Debugging, and OEM Unlocking
 - The prebuilt program includes a setup script that copies all needed files.
 
-# What is not here:
+## What is not here:
 - Support for Samsung Devices
 - Possibly support for other devices (If Fastboot mode acts differently for some reason on other devices; I am not sure)
 - A help (support) page
 
-# Goals
+## Goals
 To make this application as user-friendly as possible, we should:
 - Create a help page
 - Make it as fool-proof as we can. The user should feel comfortable with the application, and should not fear to unplug their device.
 - If possible, automize the installation to a greater level.
-- (Feel free to add more goals!)
+- Let's try to deprecate the embedded browsers. Instead, when a device is supported by the installer, there will be a button for the device that will download Lineage and TWRP, and name it correctly. This should eliminate the possibility of the user misplacing the file when they download it.
 
 # FAQ:
 
