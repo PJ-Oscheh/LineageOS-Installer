@@ -14,11 +14,11 @@ TESTED DEVICES:
  - Nexus 5X by NateDev on 1.2.0: Worked, although ADB and Fastboot didn't function correctly out-of-the-box.
 
 ## Versions
-Prebuilt: v1.4.1-development
-Source: v1.5.0-development
+- Prebuilt: v1.4.1-development
+- Source: v1.5.0-development
 
 ## Screenshots
-
+![Landing Page](Land.png)
 ## How can I contribute?
 You can contribute right here on GitHub! If you know Visual Basic, feel free to modify the installer to fix an issue, add something or delete something obsolete. You can also test the installer for your device, and report your results on [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172). 
 
