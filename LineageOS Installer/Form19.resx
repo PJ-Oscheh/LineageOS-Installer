@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>If you selected any advance options, those tools will be
+installed upon clicking "Reboot/Install". Otherwise, 
+your device should reboot.
+
+After your device boots (which may take up to 20 minutes),
+set it up and enjoy the freedom of LineageOS!</value>
+  </data>
 </root>

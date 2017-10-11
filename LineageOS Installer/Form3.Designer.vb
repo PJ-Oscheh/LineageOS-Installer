@@ -29,18 +29,23 @@ Partial Class Form3
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.WebControl2 = New Awesomium.Windows.Forms.WebControl(Me.components)
+        Me.LoadingLabel = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.Label2.Location = New System.Drawing.Point(9, 83)
+        Me.Label2.Location = New System.Drawing.Point(9, 107)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(597, 38)
         Me.Label2.TabIndex = 2
@@ -52,7 +57,7 @@ Partial Class Form3
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Roboto", 9.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(11, 127)
+        Me.Label3.Location = New System.Drawing.Point(11, 151)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(324, 15)
         Me.Label3.TabIndex = 7
@@ -61,10 +66,12 @@ Partial Class Form3
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(0, -1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(612, 75)
+        Me.Panel2.Size = New System.Drawing.Size(610, 75)
         Me.Panel2.TabIndex = 9
         '
         'Label1
@@ -88,20 +95,10 @@ Partial Class Form3
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 454)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(391, 17)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "The website is not complete, and may not load correctly at this time."
-        '
         'WebControl1
         '
-        Me.WebControl1.Location = New System.Drawing.Point(0, 161)
-        Me.WebControl1.Size = New System.Drawing.Size(612, 254)
+        Me.WebControl1.Location = New System.Drawing.Point(48, 255)
+        Me.WebControl1.Size = New System.Drawing.Size(612, 228)
         Me.WebControl1.Source = New System.Uri("http://download.lineageos.org", System.UriKind.Absolute)
         Me.WebControl1.TabIndex = 12
         '
@@ -109,26 +106,64 @@ Partial Class Form3
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Roboto", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(5, 142)
+        Me.Label5.Location = New System.Drawing.Point(5, 166)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(190, 18)
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Click below to choose device"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 75)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(610, 31)
+        Me.PictureBox2.TabIndex = 22
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(547, 12)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(51, 50)
+        Me.PictureBox3.TabIndex = 23
+        Me.PictureBox3.TabStop = False
+        '
+        'WebControl2
+        '
+        Me.WebControl2.Location = New System.Drawing.Point(0, 187)
+        Me.WebControl2.Size = New System.Drawing.Size(610, 237)
+        Me.WebControl2.Source = New System.Uri("https://download.lineageos.org/", System.UriKind.Absolute)
+        Me.WebControl2.TabIndex = 23
+        '
+        'LoadingLabel
+        '
+        Me.LoadingLabel.AutoSize = True
+        Me.LoadingLabel.Font = New System.Drawing.Font("Roboto", 12.0!)
+        Me.LoadingLabel.Location = New System.Drawing.Point(490, 407)
+        Me.LoadingLabel.Name = "LoadingLabel"
+        Me.LoadingLabel.Size = New System.Drawing.Size(0, 20)
+        Me.LoadingLabel.TabIndex = 24
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(610, 495)
+        Me.Controls.Add(Me.LoadingLabel)
+        Me.Controls.Add(Me.WebControl2)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.WebControl1)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Font = New System.Drawing.Font("Roboto", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -136,6 +171,8 @@ Partial Class Form3
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -145,7 +182,10 @@ Partial Class Form3
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label4 As Label
     Private WithEvents WebControl1 As Awesomium.Windows.Forms.WebControl
     Friend WithEvents Label5 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Private WithEvents WebControl2 As Awesomium.Windows.Forms.WebControl
+    Friend WithEvents LoadingLabel As Label
 End Class

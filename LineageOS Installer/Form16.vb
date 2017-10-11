@@ -1,7 +1,7 @@
 ﻿Public Class Form16
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         If TextBox1.Text = "yes" Then
-            Form2.Show()
+            Form21.Show()
             Me.Close()
 
         Else

@@ -31,15 +31,20 @@ Partial Class Form7
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.LoadingLabel = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(17, 374)
+        Me.Label4.Location = New System.Drawing.Point(17, 403)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(475, 60)
         Me.Label4.TabIndex = 3
@@ -50,7 +55,7 @@ Partial Class Form7
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(17, 85)
+        Me.Label5.Location = New System.Drawing.Point(17, 114)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(412, 40)
         Me.Label5.TabIndex = 4
@@ -60,7 +65,7 @@ Partial Class Form7
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 163)
+        Me.Label6.Location = New System.Drawing.Point(18, 192)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(361, 26)
         Me.Label6.TabIndex = 6
@@ -70,10 +75,12 @@ Partial Class Form7
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(-1, -2)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(612, 75)
+        Me.Panel2.Size = New System.Drawing.Size(610, 75)
         Me.Panel2.TabIndex = 11
         '
         'Label1
@@ -99,7 +106,7 @@ Partial Class Form7
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(21, 204)
+        Me.RichTextBox1.Location = New System.Drawing.Point(21, 233)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(564, 167)
         Me.RichTextBox1.TabIndex = 16
@@ -110,18 +117,49 @@ Partial Class Form7
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(217, 134)
+        Me.Label2.Location = New System.Drawing.Point(217, 163)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(162, 20)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "CHECK CONNECTION"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 75)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(610, 31)
+        Me.PictureBox1.TabIndex = 22
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(547, 12)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(51, 50)
+        Me.PictureBox3.TabIndex = 23
+        Me.PictureBox3.TabStop = False
+        '
+        'LoadingLabel
+        '
+        Me.LoadingLabel.AutoSize = True
+        Me.LoadingLabel.Font = New System.Drawing.Font("Roboto", 12.0!)
+        Me.LoadingLabel.Location = New System.Drawing.Point(490, 407)
+        Me.LoadingLabel.Name = "LoadingLabel"
+        Me.LoadingLabel.Size = New System.Drawing.Size(0, 20)
+        Me.LoadingLabel.TabIndex = 24
+        '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(610, 495)
+        Me.Controls.Add(Me.LoadingLabel)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.PictureBox2)
@@ -129,7 +167,7 @@ Partial Class Form7
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form7"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -137,6 +175,8 @@ Partial Class Form7
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -149,4 +189,7 @@ Partial Class Form7
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents LoadingLabel As Label
 End Class

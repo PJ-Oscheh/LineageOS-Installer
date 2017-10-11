@@ -11,7 +11,7 @@ Lineage OS Installer vx.x-release.zip
 
 'DO NOT OPEN LINEAGE INSTALLER.txt' tells the user to open README for setup instructions.
 
-'LineageOS Installer.exe' is the main program.
+'LOS-Inst.exe' is the main program.
 
 'README.txt' tells the user to run setup.bat rather than open the EXE file.
 
@@ -27,7 +27,4 @@ Lineage OS Installer vx.x-release.zip
 
 
 
-setup.bat will not work correctly unless the files are layed out as they are above. (so it will not function correctly inside youur clone)
-
-And this goes without saying; feel free to modify these files! A gist is created for 'install.bat', and a link can be found in 'README.md' in the root of the `master` branch.
-I will create gists for the other scripts if that is requested. 
+setup.bat will not work correctly unless the files are layed out as they are above. (so it will not function correctly inside your clone)
