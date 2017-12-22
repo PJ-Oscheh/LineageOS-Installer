@@ -1,4 +1,11 @@
 # LineageOS-Installer
+
+On December 22, 2017, development on version 2.0 began. This version will overall have a better design, including:
+- Proper names for forms
+- Use of Ignace Mae's "Material Skin" (as opposed to colored labels and picture boxes)
+- Foreign language support
+- A nicer installation screen, with a progress bar if possible.
+
 A simple, graphical solution to installing LineageOS.
 
 NOTE 1: The repository has been renamed from `Lineage-OS-Installer` to `LineageOS-Installer`. Keep this in mind next time you commit to the repository if something goes wrong.
