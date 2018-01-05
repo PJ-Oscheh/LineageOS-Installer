@@ -15,7 +15,7 @@ On December 22, 2017, development on version 2.0 began.
 - Support for Samsung Devices if possible
 ## What isn't complete
 - ADB Check is not complete; although it can check to see whether the device is connected, it *cannot* determine whether the user allowed the connection to be authorized.
-- Foreign language support will come with text that is programatically set at run time or through the 'LangSelect' form. It is partially implemented for English but it is not complete; only a few forms (and even those may be incomplete) are set up for this right now. The HTML pages also won't change with this button; for local pages ("Set Up Your Device") we could probably just add each language's "Set Up Your Device" page. 
+- Foreign language support will come with text that is programatically set at run time or through the `LangSelect` form. It is partially implemented for English but it is not complete; only a few forms (and even those may be incomplete) are set up for this right now. The HTML pages also won't change with this button; for local pages ("Set Up Your Device") we could probably just add each language's "Set Up Your Device" page. 
 ## What is new in the repository
 - Removed adb executible for now; it is unclear whether ADB and Fastboot can be redistributed. If they can, they will be included in the application.
 
