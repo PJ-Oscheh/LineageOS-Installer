@@ -1,10 +1,24 @@
 # LineageOS-Installer
 
-On December 22, 2017, development on version 2.0 began. This version will overall have a better design, including:
+## Version 2.0
+On December 22, 2017, development on version 2.0 began.
+## What is new
 - Proper names for forms
 - Use of Ignace Mae's "Material Skin" (as opposed to colored labels and picture boxes)
-- Foreign language support
-- A nicer installation screen, with a progress bar if possible.
+- A nicer installation screen with a progress bar
+- A new guide for enabling USB Debugging, written in HTML. This guide isn't complete yet.
+- The form (yes - form without the "s;" all files are downloaded in one form, with the browsers being shown/hidden at the click of a button) to download files is now bigger, and an "Open in Browser" button was added incase the page proves difficult to use in a confined space or simply won't display correctly.
+- The ADB check is now automatic (needs improvement, see below)
+- A file check is now performed prior to installation that checks for the LineageOS Zip, GApps Zip, TWRP, and all installation scripts.
+## What is to come
+- Foreign language support (see below)
+- Support for Samsung Devices if possible
+## What isn't complete
+- ADB Check is not complete; although it can check to see whether the device is connected, it *cannot* determine whether the user allowed the connection to be authorized.
+- Foreign language support will come with text that is programatically set at run time or through the 'LangSelect' form. It is partially implemented for English but it is not complete; only a few forms (and even those may be incomplete) are set up for this right now. The HTML pages also won't change with this button; for local pages ("Set Up Your Device") we could probably just add each language's "Set Up Your Device" page. 
+## What is new in the repository
+- Removed adb executible for now; it is unclear whether ADB and Fastboot can be redistributed. If they can, they will be included in the application.
+
 
 A simple, graphical solution to installing LineageOS.
 
@@ -22,10 +36,8 @@ TESTED DEVICES:
 
 ## Versions
 - Prebuilt: v1.4.1-development
-- Source: v1.5.0-development
+- Source: v2.0-development
 
-## Screenshots
-![Landing Page](Land.png)
 ## How can I contribute?
 You can contribute right here on GitHub! If you know Visual Basic, feel free to modify the installer to fix an issue, add something or delete something obsolete. You can also test the installer for your device, and report your results on [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172). 
 
