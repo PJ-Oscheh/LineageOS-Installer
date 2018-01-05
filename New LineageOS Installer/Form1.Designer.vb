@@ -26,6 +26,7 @@ Partial Class Form1
         Me.WelcomeLabel = New MaterialSkin.Controls.MaterialLabel()
         Me.LanguageButton = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         Me.SuspendLayout()
         '
         'NextButton
@@ -50,9 +51,9 @@ Partial Class Form1
         Me.WelcomeLabel.Location = New System.Drawing.Point(68, 99)
         Me.WelcomeLabel.MouseState = MaterialSkin.MouseState.HOVER
         Me.WelcomeLabel.Name = "WelcomeLabel"
-        Me.WelcomeLabel.Size = New System.Drawing.Size(345, 19)
+        Me.WelcomeLabel.Size = New System.Drawing.Size(346, 19)
         Me.WelcomeLabel.TabIndex = 1
-        Me.WelcomeLabel.Text = "Welcome to LineageOS! Click ""Next to get started!"
+        Me.WelcomeLabel.Text = "Welcome to LineageOS! Click 'Next' to get started!"
         '
         'LanguageButton
         '
@@ -79,15 +80,30 @@ Partial Class Form1
         Me.MaterialLabel1.Location = New System.Drawing.Point(12, 410)
         Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(220, 19)
+        Me.MaterialLabel1.Size = New System.Drawing.Size(280, 19)
         Me.MaterialLabel1.TabIndex = 3
-        Me.MaterialLabel1.Text = "Version 2.0-privatedevelopment"
+        Me.MaterialLabel1.Text = "Version 2.0-development (Experimental!)"
+        '
+        'MaterialLabel2
+        '
+        Me.MaterialLabel2.BackColor = System.Drawing.Color.White
+        Me.MaterialLabel2.Depth = 0
+        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 163)
+        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel2.Name = "MaterialLabel2"
+        Me.MaterialLabel2.Size = New System.Drawing.Size(456, 162)
+        Me.MaterialLabel2.TabIndex = 4
+        Me.MaterialLabel2.Text = "This application is by no means complete; be ready to fix your device if the inst" &
+    "allation fails."
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(480, 480)
+        Me.Controls.Add(Me.MaterialLabel2)
         Me.Controls.Add(Me.MaterialLabel1)
         Me.Controls.Add(Me.LanguageButton)
         Me.Controls.Add(Me.WelcomeLabel)
@@ -104,4 +120,5 @@ Partial Class Form1
     Friend WithEvents WelcomeLabel As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents LanguageButton As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
 End Class

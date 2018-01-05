@@ -41,7 +41,7 @@ Public Class install
         runningScript.EnableRaisingEvents = True
         AddHandler runningScript.Exited, AddressOf Unlock_BLProcessExited
     End Sub
-    Private Sub Unlock_BLProcessExited()
+    Private Sub Unlock_BLProcessExited(sender As Object, e As EventArgs)
         'Hmm.... "Cross-thread operation not valid: Control 'messageLabel' accessed from a thread other than the thread it was created on" occurs when running from source but everything seems fine when built (published)
 
         Me.Invoke(Sub() ProgressBar1.Value = 2)
@@ -71,7 +71,7 @@ Public Class install
             Install_Lineage()
         End If
     End Sub
-    Private Sub Flash_RecoveryProcessExited()
+    Private Sub Flash_RecoveryProcessExited(sender As Object, e As EventArgs)
         Me.Invoke(Sub() ProgressBar1.Value = 3)
         stepNumber = 1
         messageLabel.Text = "On your device, use the options to select 'Recovery'."
@@ -88,8 +88,9 @@ Public Class install
         runningScript.EnableRaisingEvents = True
         AddHandler runningScript.Exited, AddressOf Install_LineageProcessExited
     End Sub
-    Private Sub Install_LineageProcessExited()
+    Private Sub Install_LineageProcessExited(sender As Object, e As EventArgs)
         Me.Invoke(Sub() ProgressBar1.Value = 4)
+        messageLabel.Show()
         messageLabel.Text = "LineageOS should have installed, and your device should be booting now. Please allow up to 20 minutes for the device to boot."
     End Sub
 End Class

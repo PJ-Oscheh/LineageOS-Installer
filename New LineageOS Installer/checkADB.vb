@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Public Class checkADB
+    'Sorry for the misnomer! This is the file check; the ADB Check occurs in `install.vb`.
     Dim proceedWithInstall As Integer
     '0 = don't proceed, 1 = proceed.'
     Private Sub MaterialLabel1_Click(sender As Object, e As EventArgs) Handles mainLabel.Click
@@ -7,7 +8,11 @@ Public Class checkADB
     End Sub
 
     Private Sub checkADB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        NextButton.Hide()
+        fileCheck()
+    End Sub
+
+    Private Sub fileCheck() Handles MyBase.Load
+        NextButton.Text = "Retry"
         proceedWithInstall = 1
         warningImg.Hide()
         issueText.Hide()
@@ -114,11 +119,20 @@ Public Class checkADB
             errorLabel.Text = "'unlock_bl.bat' was not found. You may have a corrupt program directory; if so, please restart the program. If that doesn't fix the issue, redownload it."
         End If
         If proceedWithInstall = 1 Then
+            NextButton.Text = "Next"
             NextButton.Show()
         End If
     End Sub
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        install.Show()
+        If proceedWithInstall = 0 Then
+            NextButton.Show()
+
+            fileCheck()
+        End If
+        If proceedWithInstall = 1 Then
+            install.Show()
+        End If
+
     End Sub
 End Class
