@@ -1,9 +1,11 @@
+
 # LineageOS-Installer
 
 ## Version 2.0
 On December 22, 2017, development on version 2.0 began.
 ## What is new
 - Proper names for forms
+- Forms designed to look like message boxes have been removed. Now, labels and buttons appear in the respective form.
 - Use of Ignace Mae's "Material Skin" (as opposed to colored labels and picture boxes)
 - > This means window borders, along with buttons and text all follow Material Design! Buttons have animation when you hover and click them, although with the set up of this application, the animation for floating buttons isn't seen. Hopefully this can be fixed, but it isn't a major issue.
 - A nicer installation screen with a progress bar
