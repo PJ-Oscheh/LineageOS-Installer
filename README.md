@@ -5,6 +5,7 @@ On December 22, 2017, development on version 2.0 began.
 ## What is new
 - Proper names for forms
 - Use of Ignace Mae's "Material Skin" (as opposed to colored labels and picture boxes)
+- > This means window borders, along with buttons and text all follow Material Design! Buttons have animation when you hover and click them, although with the set up of this application, the animation for floating buttons isn't seen. Hopefully this can be fixed, but it isn't a major issue.
 - A nicer installation screen with a progress bar
 - A new guide for enabling USB Debugging, written in HTML. This guide isn't complete yet.
 - The form (yes - form without the "s;" all files are downloaded in one form, with the browsers being shown/hidden at the click of a button) to download files is now bigger, and an "Open in Browser" button was added incase the page proves difficult to use in a confined space or simply won't display correctly.
@@ -16,8 +17,10 @@ On December 22, 2017, development on version 2.0 began.
 ## What isn't complete
 - ADB Check is not complete; although it can check to see whether the device is connected, it *cannot* determine whether the user allowed the connection to be authorized.
 - Foreign language support will come with text that is programatically set at run time or through the `LangSelect` form. It is partially implemented for English but it is not complete; only a few forms (and even those may be incomplete) are set up for this right now. The HTML pages also won't change with this button; for local pages ("Set Up Your Device") we could probably just add each language's "Set Up Your Device" page. 
+- Flat buttons are pre-highlighted.
 ## What is new in the repository
 - Removed adb executible for now; it is unclear whether ADB and Fastboot can be redistributed. If they can, they will be included in the application.
+- Removed `Land.png`, Next and About button textures as they are all now irrelevant.
 
 
 A simple, graphical solution to installing LineageOS.
