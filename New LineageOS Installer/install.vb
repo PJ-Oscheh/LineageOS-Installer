@@ -1,7 +1,11 @@
 ﻿Imports System.IO
+Imports System.Threading
+
 Public Class install
     Dim runningScript As Process
     Dim stepNumber As Integer
+    Dim interval As New TimeSpan(0, 0, 1)
+
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
         NextButton.Hide()
@@ -45,14 +49,18 @@ Public Class install
         'Hmm.... "Cross-thread operation not valid: Control 'messageLabel' accessed from a thread other than the thread it was created on" occurs when running from source but everything seems fine when built (published)
 
         Me.Invoke(Sub() ProgressBar1.Value = 2)
-        messageLabel.Show()
-        MaterialFlatButton1.Show()
+
+        Me.Invoke(Sub() messageLabel.Show())
+        Me.Invoke(Sub() MaterialFlatButton1.Show())
     End Sub
     Private Sub install_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PictureBox1.Hide()
         messageLabel.Hide()
         MaterialFlatButton1.Hide()
         stepNumber = 0
     End Sub
+
+
 
     Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
 
@@ -74,14 +82,46 @@ Public Class install
     Private Sub Flash_RecoveryProcessExited(sender As Object, e As EventArgs)
         Me.Invoke(Sub() ProgressBar1.Value = 3)
         stepNumber = 1
-        messageLabel.Text = "On your device, use the options to select 'Recovery'."
-        MaterialFlatButton1.Text = "Recovery has booted; proceed."
-        MaterialFlatButton1.Show()
+        Me.Invoke(Sub() PictureBox1.Show())
+        Me.Invoke(Sub() messageLabel.Text = "Your device is about to boot into TWRP Recovery. Swipe to allow modifications. Please click the button below when the main screen (reference the image to the left) loads.")
+        Me.Invoke(Sub() MaterialFlatButton1.Text = "Recovery has booted; proceed.")
+        Me.Invoke(Sub() MaterialFlatButton1.Show())
+    End Sub
+    Private Sub Test_Twrp_Boot()
+        'Sub isn't used; the twrp check occurs too early.
+        runningScript = New Process
+        runningScript.StartInfo.FileName = "C:\Tools\LineageOSInstaller\scripts\test_twrp_boot.bat"
+        runningScript.Start()
+        runningScript.EnableRaisingEvents = True
+        AddHandler runningScript.Exited, AddressOf Test_Twrp_BootProcessExited
+    End Sub
+    Private Sub Test_Twrp_BootProcessExited(sender As Object, e As System.EventArgs)
+        'Sub isn't used
+
+        Dim infotxt As String = "C:\Tools\LineageOSInstaller\scripts\test_twrp_boot.txt"
+        Dim tlines() As String = IO.File.ReadAllLines(infotxt)
+        If File.ReadAllText(infotxt).Length = 0 Then
+
+            Test_Twrp_Boot()
+            Return
+
+        End If
+        If tlines(0) = "1" Then
+
+            Install_Lineage()
+            Return
+        Else
+
+            Test_Twrp_Boot()
+            Return
+        End If
+
+
     End Sub
     Private Sub Install_Lineage()
         'Install LineageOS
-        MaterialFlatButton1.Hide()
-        messageLabel.Hide()
+        Me.Invoke(Sub() MaterialFlatButton1.Hide())
+        Me.Invoke(Sub() messageLabel.Hide())
         runningScript = New Process
         runningScript.StartInfo.FileName = "C:\Tools\LineageOSInstaller\scripts\install_lineage.bat"
         runningScript.Start()
@@ -90,7 +130,7 @@ Public Class install
     End Sub
     Private Sub Install_LineageProcessExited(sender As Object, e As EventArgs)
         Me.Invoke(Sub() ProgressBar1.Value = 4)
-        messageLabel.Show()
-        messageLabel.Text = "LineageOS should have installed, and your device should be booting now. Please allow up to 20 minutes for the device to boot."
+        Me.Invoke(Sub() messageLabel.Show())
+        Me.Invoke(Sub() messageLabel.Text = "LineageOS should have installed, and your device should be booting now. Please allow up to 20 minutes for the device to boot.")
     End Sub
 End Class

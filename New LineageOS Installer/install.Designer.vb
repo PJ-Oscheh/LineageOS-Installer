@@ -29,6 +29,8 @@ Partial Class install
         Me.messageLabel = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MaterialLabel1
@@ -73,10 +75,10 @@ Partial Class install
         Me.messageLabel.Depth = 0
         Me.messageLabel.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.messageLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.messageLabel.Location = New System.Drawing.Point(12, 247)
+        Me.messageLabel.Location = New System.Drawing.Point(165, 178)
         Me.messageLabel.MouseState = MaterialSkin.MouseState.HOVER
         Me.messageLabel.Name = "messageLabel"
-        Me.messageLabel.Size = New System.Drawing.Size(447, 99)
+        Me.messageLabel.Size = New System.Drawing.Size(294, 143)
         Me.messageLabel.TabIndex = 9
         Me.messageLabel.Text = resources.GetString("messageLabel.Text")
         '
@@ -95,11 +97,22 @@ Partial Class install
         Me.MaterialFlatButton1.Text = "I've re-enabled USB Debugging; proceed "
         Me.MaterialFlatButton1.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 155)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(125, 208)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
         'install
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(480, 480)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.messageLabel)
         Me.Controls.Add(Me.ProgressBar1)
@@ -108,6 +121,7 @@ Partial Class install
         Me.Name = "install"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Install LineageOS!"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,4 +133,5 @@ Partial Class install
     Friend WithEvents messageLabel As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
