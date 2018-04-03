@@ -1,5 +1,11 @@
 
 # LineageOS-Installer
+## Focus List
+Idk what to call tis section so I'll call it the "Focus List". Essentially these are just ideas that will be implemented soon.
+- Build type:
+Allow the user to select either "Stable" to install a stable build of LOS and a tested version of TWRP. This will be disabled until stable LOS builds roll out. The user will just select their device to download files, as opposed to using the browser interface. This will require home-compiled versions of TWRP and GApps, however, as redistributing their binaries are not allowed.
+- Samsung Devices: 
+Samsung Devices are some of the most popular in the world. Unfortunatly, Samsung has been making an effort to lock down their devices. As such, older models (think S3, S4, S5) will be primarily targeted at first. 
 
 ## Version 2.0
 On December 22, 2017, development on version 2.0 began.
