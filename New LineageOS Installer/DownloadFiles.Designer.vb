@@ -23,6 +23,7 @@ Partial Class DownloadFiles
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DownloadFiles))
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.lineageWebControl = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.NextButton = New MaterialSkin.Controls.MaterialRaisedButton()
@@ -138,6 +139,7 @@ Partial Class DownloadFiles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1056, 695)
         Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.MaterialLabel2)
@@ -146,9 +148,10 @@ Partial Class DownloadFiles
         Me.Controls.Add(Me.lineageWeb)
         Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.MaterialLabel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DownloadFiles"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Let's download your files"
+        Me.Text = "Let's Download Your Files"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

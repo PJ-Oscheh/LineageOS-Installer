@@ -7,6 +7,7 @@ Public Class install
     Dim interval As New TimeSpan(0, 0, 1)
 
 
+
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
         NextButton.Hide()
         ADBCheck()
@@ -46,7 +47,8 @@ Public Class install
         AddHandler runningScript.Exited, AddressOf Unlock_BLProcessExited
     End Sub
     Private Sub Unlock_BLProcessExited(sender As Object, e As EventArgs)
-        'Hmm.... "Cross-thread operation not valid: Control 'messageLabel' accessed from a thread other than the thread it was created on" occurs when running from source but everything seems fine when built (published)
+        notifUsbDebug.Visible = True
+        notifUsbDebug.ShowBalloonTip(5000)
 
         Me.Invoke(Sub() ProgressBar1.Value = 2)
 
@@ -54,6 +56,11 @@ Public Class install
         Me.Invoke(Sub() MaterialFlatButton1.Show())
     End Sub
     Private Sub install_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        notifUsbDebug.Icon = SystemIcons.Information
+        notifUsbDebug.BalloonTipText = "Please enable USB Debugging when your device boots."
+        notifUsbDebug.BalloonTipTitle = "Enable USB Debugging"
+        notifUsbDebug.BalloonTipIcon = ToolTipIcon.Info
+
         PictureBox1.Hide()
         messageLabel.Hide()
         MaterialFlatButton1.Hide()
@@ -120,6 +127,7 @@ Public Class install
     End Sub
     Private Sub Install_Lineage()
         'Install LineageOS
+        Me.Invoke(Sub() PictureBox1.Hide())
         Me.Invoke(Sub() MaterialFlatButton1.Hide())
         Me.Invoke(Sub() messageLabel.Hide())
         runningScript = New Process
@@ -132,5 +140,17 @@ Public Class install
         Me.Invoke(Sub() ProgressBar1.Value = 4)
         Me.Invoke(Sub() messageLabel.Show())
         Me.Invoke(Sub() messageLabel.Text = "LineageOS should have installed, and your device should be booting now. Please allow up to 20 minutes for the device to boot.")
+    End Sub
+
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
+
     End Sub
 End Class

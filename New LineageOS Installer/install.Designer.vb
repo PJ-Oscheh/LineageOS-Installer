@@ -22,6 +22,7 @@ Partial Class install
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(install))
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.NextButton = New MaterialSkin.Controls.MaterialRaisedButton()
@@ -30,6 +31,7 @@ Partial Class install
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.notifUsbDebug = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -107,10 +109,16 @@ Partial Class install
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
+        'notifUsbDebug
+        '
+        Me.notifUsbDebug.Text = "NotifyIcon1"
+        Me.notifUsbDebug.Visible = True
+        '
         'install
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(480, 480)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MaterialFlatButton1)
@@ -118,6 +126,7 @@ Partial Class install
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.MaterialLabel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "install"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Install LineageOS!"
@@ -134,4 +143,5 @@ Partial Class install
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents notifUsbDebug As NotifyIcon
 End Class

@@ -4,7 +4,9 @@ Public Class Form1
         Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
         SkinManager.AddFormToManage(Me)
         SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
-        SkinManager.ColorScheme = New ColorScheme(Primary.Teal800, Primary.Teal900, Primary.Teal500, Accent.LightBlue200, TextShade.WHITE)
+        SkinManager.ColorScheme = New ColorScheme(Primary.Teal800, Primary.Teal900, Primary.Teal500, Accent.Orange400, TextShade.WHITE)
+
+
     End Sub
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click

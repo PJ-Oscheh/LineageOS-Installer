@@ -23,6 +23,7 @@ Partial Class setUpDevice
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(setUpDevice))
         Me.NextButton = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.SuspendLayout()
@@ -50,9 +51,11 @@ Partial Class setUpDevice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(480, 480)
         Me.Controls.Add(Me.WebControl1)
         Me.Controls.Add(Me.NextButton)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "setUpDevice"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Set Up Your Device"

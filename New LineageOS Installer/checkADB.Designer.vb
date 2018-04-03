@@ -74,12 +74,12 @@ Partial Class checkADB
         Me.issueText.AutoSize = True
         Me.issueText.BackColor = System.Drawing.Color.White
         Me.issueText.Depth = 0
-        Me.issueText.Font = New System.Drawing.Font("Roboto", 22.0!)
+        Me.issueText.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.issueText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.issueText.Location = New System.Drawing.Point(59, 83)
         Me.issueText.MouseState = MaterialSkin.MouseState.HOVER
         Me.issueText.Name = "issueText"
-        Me.issueText.Size = New System.Drawing.Size(410, 37)
+        Me.issueText.Size = New System.Drawing.Size(207, 19)
         Me.issueText.TabIndex = 3
         Me.issueText.Text = "The installation cannot begin."
         '
@@ -131,6 +131,7 @@ Partial Class checkADB
         Me.Controls.Add(Me.warningImg)
         Me.Controls.Add(Me.fileLabel)
         Me.Controls.Add(Me.mainLabel)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "checkADB"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Making sure you have your files..."

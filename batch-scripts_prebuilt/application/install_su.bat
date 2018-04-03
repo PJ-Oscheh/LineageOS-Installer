@@ -1,1 +1,0 @@
-adb shell twrp install /sdcard/SU.zip
