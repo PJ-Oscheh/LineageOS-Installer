@@ -51,8 +51,8 @@ TESTED DEVICES:
  - Nexus 5X by NateDev on 1.2.0: Worked, although ADB and Fastboot didn't function correctly out-of-the-box.
 
 ## Versions
-- Prebuilt: v1.4.1-development
-- Source: v2.0-development
+- Prebuilt: v2.0-development
+- Source: v2.1-development (Still referred to as v2.0)
 
 ## How can I contribute?
 You can contribute right here on GitHub! If you know Visual Basic, feel free to modify the installer to fix an issue, add something or delete something obsolete. You can also test the installer for your device, and report your results on [this thread](https://forum.xda-developers.com/lineage/general/want-lineage-os-installer-t3529172). 
@@ -68,20 +68,7 @@ You can contribute right here on GitHub! If you know Visual Basic, feel free to 
 - Possibly support for other devices (If Fastboot mode acts differently for some reason on other devices; I am not sure)
 - A help (support) page
 
-## Goals
-To make this application as user-friendly as possible, we should:
-- Create a help page
-- Make it as fool-proof as we can. The user should feel comfortable with the application, and should not fear to unplug their device.
-- If possible, automize the installation to a greater level.
-- Let's try to deprecate the embedded browsers. Instead, when a device is supported by the installer, there will be a button for the device that will download Lineage and TWRP, and name it correctly. This should eliminate the possibility of the user misplacing the file when they download it.
-
 # FAQ:
-
-This program is an unofficial almost-automatic install for Lineage OS, designed for beginners or users who just would like to install Lineage OS and be done; for users who don't care how to install a ROM, who just want it on their phone.
-
-[-] What does this program do?
-
-This program on its own does not do much; in fact, all it does it give 2 embedded web browsers to download Lineage OS and TWRP. However, it gives a step-by-step explanation of what do, where to save the files, and what to name them. Lineage OS is actually installed through multiple scripts included in this repository. Those scripts allow the user to install LineageOS without interacting with the TWRP recovery and typing commands.
 
 [-] Why would I want to use this?
 
