@@ -2,13 +2,15 @@
 # LineageOS-Installer
 ## Focus List
 Idk what to call this section so I'll call it the "Focus List". Essentially these are just ideas that will be implemented soon.
-
+- Channels: The user can pick between a stable channel that will automatically download all files. This will only be available for select devices.
 - Samsung Devices: 
 Samsung Devices are some of the most popular in the world. Unfortunatly, Samsung has been making an effort to lock down their devices. As such, older models (think S3, S4, S5) will be primarily targeted at first. 
-## Source Features:
+## Source Patch Notes:
 Some notable features have been committed, but not added to a release just yet. These features are not considered "big enough" to push as an update on their own.
 
-- Channels UI: The user can now <theoretically> pick between "Stable" and "Advanced" channels. The latter leads into what the application has been so far, but with options to skip file check (perhaps if you modified a script to flash an additional file) and/or go directly to the installation. The stable channel is not ready yet (and is disabled in the UI, but enabling via source won't do anything either) as LOS builds have no stable rollout available. If/when those become a thing, the user will simply select their (supported/tested) device, and all files will be automatically downloaded. This will require home-compiling TWRP and GApps, as we cannot use the binaries provided by the mirrors.
+- Channels UI: The user can now <theoretically> pick between "Stable" and "Advanced" channels. The latter leads into what the application has been so far, but with options to skip file check (perhaps if you modified a script to flash an additional file) and/or go directly to the installation. The stable channel is not ready yet (and is disabled in the UI, but enabling via source won't do anything either) as LOS builds have no stable rollout available. If/when those become a thing, the user will simply select their (supported/tested) device, and all files will be automatically downloaded. We _should_ be able to directly download the LineageOS zip and TWRP img from their respective mirrors, but GApps requires custom hosting as their website doesn't permit this. We also can't redistribute their prebuilt binaries. No problem; behold! [This repository](https://github.com/PJBeans/Compiled-Gapps) hosts GApps compiled by yours truly, and we can directly download from GitHub! I haven't flashed and tested them, but I don't see why they wouldn't work. Currently I only have ARM for API 25, but I intend to get APIs 24-27 uploaded soon.
+
+- Control-colored issues (such as button pre-highlighting) have been fixed
 
 ## Version 2.0
 On December 22, 2017, development on version 2.0 began.
