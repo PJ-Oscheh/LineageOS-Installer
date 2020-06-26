@@ -1,5 +1,9 @@
 
 # LineageOS-Installer
+
+HEADS UP: This project is more-or-less abandoned. It does NOT support A/B partitioned devices. It will still probably work for devices such as Nexus devices as they follow the traditional ROM-flashing format, but no guarentees of success can be made. Use at your own risk.
+
+
 ## Focus List
 Idk what to call this section so I'll call it the "Focus List". Essentially these are just ideas that will be implemented soon.
 - Channels: The user can pick between a stable channel that will automatically download all files. This will only be available for select devices.
